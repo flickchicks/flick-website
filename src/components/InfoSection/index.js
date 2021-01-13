@@ -25,7 +25,8 @@ const InfoSection = ({
     headline,
     darkText,
     description,
-    buttonLabel,
+    buttonLabelOne,
+    buttonLabelTwo,
     img,
     alt,
     primary,
@@ -58,7 +59,20 @@ const InfoSection = ({
                                         dark={dark ? 1 : 0}
                                         dark2={dark2 ? 1 : 0}
                                     >
-                                        {buttonLabel}
+                                        {buttonLabelOne}
+                                    </Button>
+                                    <Button
+                                        to="home"
+                                        smooth={true}
+                                        duration={500}
+                                        spy={true}
+                                        exact="true"
+                                        offset={-80}
+                                        primary={primary ? 1 : 0}
+                                        dark={dark ? 1 : 0}
+                                        dark2={dark2 ? 1 : 0}
+                                    >
+                                        {buttonLabelTwo}
                                     </Button>
                                 </BtnWrap>
                             </TextWrapper>

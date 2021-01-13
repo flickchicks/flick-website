@@ -1,23 +1,24 @@
 import styled from "styled-components";
+import { COLORS } from "../../Colors";
 
-export const ServicesContainer = styled.div`
+export const CreatorsContainer = styled.div`
     height: 800px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: #010606;
+    background: ${COLORS.backgroundPurple};
 
     @media screen and (max-width: 768px) {
-        height: 1100px;
+        height: 2100px;
     }
 
     @media screen and (max-width: 480px) {
-        height: 1300px;
+        height: 2300px;
     }
 `;
 
-export const ServicesWrapper = styled.div`
+export const CreatorsWrapper = styled.div`
     max-width: 1000px;
     margin: 0 auto;
     display: grid;
@@ -38,8 +39,8 @@ export const ServicesWrapper = styled.div`
     }
 `;
 
-export const ServicesCard = styled.div`
-    background: #fff;
+export const CreatorsCard = styled.div`
+    background: ${COLORS.backgroundPurple};
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -56,15 +57,15 @@ export const ServicesCard = styled.div`
     }
 `;
 
-export const ServicesIcon = styled.img`
+export const CreatorsIcon = styled.img`
     height: 160px;
     width: 160px;
     margin-bottom: 10px;
 `;
 
-export const ServicesH1 = styled.h1`
+export const CreatorsH1 = styled.h1`
     font-size: 2.5rem;
-    color: #fff;
+    color: black;
     margin-bottom: 64px;
 
     @media screen and (max-width: 480px) {
@@ -72,12 +73,12 @@ export const ServicesH1 = styled.h1`
     }
 `;
 
-export const ServicesH2 = styled.h2`
+export const CreatorsH2 = styled.h2`
     font-size: 1rem;
     margin-bottom: 10px;
 `;
 
-export const ServicesP = styled.p`
+export const CreatorsP = styled.p`
     font-size: 1rem;
     text-align: center;
 `;

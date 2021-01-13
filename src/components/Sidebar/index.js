@@ -19,23 +19,23 @@ const Sidebar = ({ isOpen, toggle }) => {
             <SidebarWrapper>
                 <SidebarMenu>
                     {/* react scroll links! */}
-                    <SidebarLink to="about" onClick={toggle}>
+                    {/* <SidebarLink to="about" onClick={toggle}>
                         About
-                    </SidebarLink>
+                    </SidebarLink> */}
                     <SidebarLink to="discover" onClick={toggle}>
                         Discover
                     </SidebarLink>
-                    <SidebarLink to="services" onClick={toggle}>
-                        Services
+                    <SidebarLink to="creators" onClick={toggle}>
+                        Creators
                     </SidebarLink>
-                    <SidebarLink to="signup" onClick={toggle}>
+                    {/* <SidebarLink to="signup" onClick={toggle}>
                         Sign Up
-                    </SidebarLink>
+                    </SidebarLink> */}
                 </SidebarMenu>
-                <SideBtnWrap>
-                    {/* react router link! */}
-                    <SidebarRoute to="/signin">Sign In</SidebarRoute>
-                </SideBtnWrap>
+                {/* <SideBtnWrap> */}
+                {/* react router link! */}
+                {/* <SidebarRoute to="/signin">Sign In</SidebarRoute>
+                </SideBtnWrap> */}
             </SidebarWrapper>
         </SidebarContainer>
     );

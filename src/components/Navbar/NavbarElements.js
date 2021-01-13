@@ -1,9 +1,11 @@
 import styled from "styled-components";
 import { Link as LinkR } from "react-router-dom";
 import { Link as LinkS } from "react-scroll";
+import { COLORS } from "../../Colors";
 
 export const Nav = styled.nav`
-    background: ${({ scrollNav }) => (scrollNav ? "#000" : "transparent")};
+    background: ${({ scrollNav }) =>
+        scrollNav ? COLORS.backgroundPurple : "transparent"};
     height: 80px;
     margin-top: -80px;
     display: flex;
@@ -30,7 +32,7 @@ export const NavbarContainer = styled.div`
 `;
 
 export const NavLogo = styled(LinkR)`
-    color: #fff;
+    color: black;
     justify-self: flex-start;
     cursor: pointer;
     font-size: 1.5rem;
@@ -52,7 +54,7 @@ export const MobileIcon = styled.div`
         transform: translate(-100%, 60%);
         font-size: 1.8rem;
         cursor: pointer;
-        color: #fff;
+        color: black;
     }
 `;
 
@@ -73,7 +75,7 @@ export const NavItem = styled.li`
 `;
 
 export const NavLinks = styled(LinkS)`
-    color: #fff;
+    color: black;
     display: flex;
     align-items: center;
     text-decoration: none;
@@ -83,7 +85,7 @@ export const NavLinks = styled(LinkS)`
 
     /* whichever navbar tab you hit on, gets highlighted with green border  */
     &.active {
-        border-bottom: 3px solid #01bf71;
+        border-bottom: 3px solid ${COLORS.lightPurple};
     }
 `;
 

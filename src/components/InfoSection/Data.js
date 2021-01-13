@@ -1,37 +1,37 @@
-import Icon1 from "../../images/svg-1.svg";
 import Icon2 from "../../images/svg-2.svg";
-import Icon3 from "../../images/svg-3.svg";
+import IconPhone from "../../images/iphone.svg";
 
-export const homeObjOne = {
-    id: "about",
-    lightBg: false,
-    lightText: true,
-    lightTextDesc: true,
-    topLine: "Premium Bank",
-    headline: "Unlimited Transactions with zero fees",
-    description:
-        "Get access to our exclusive app that allows you to send unlimited transactions without getting charged any fees",
-    buttonLabel: "Get Started",
-    imgStart: false,
-    img: Icon1,
-    alt: "Graph",
-    dark: true,
-    primary: true,
-    darkText: false,
-};
+// export const homeObjOne = {
+//     id: "about",
+//     lightBg: false,
+//     lightText: true,
+//     lightTextDesc: true,
+//     topLine: "Premium Bank",
+//     headline: "Unlimited Transactions with zero fees",
+//     description:
+//         "Get access to our exclusive app that allows you to send unlimited transactions without getting charged any fees",
+//     buttonLabel: "Get Started",
+//     imgStart: false,
+//     img: Icon1,
+//     alt: "Graph",
+//     dark: true,
+//     primary: true,
+//     darkText: false,
+// };
 
 export const homeObjTwo = {
-    id: "discover",
+    id: "About",
     lightBg: true,
     lightText: false,
     lightTextDesc: false,
-    topLine: "Unlimited Access",
-    headline: "Login to your account at any time",
-    description:
-        "We have you covered no matter where you are located. All you need is an internet connection and a phone or computer.",
-    buttonLabel: "Learn More",
+    topLine: "",
+    headline:
+        "A new companion to your b̶i̶n̶g̶e̶ ̶w̶a̶t̶c̶h̶i̶n̶g̶ h̶a̶b̶i̶t̶s̶ favorite movies and shows",
+    description: "Try out our Beta!",
+    buttonLabelOne: "iOS",
+    buttonLabelTwo: "Android",
     imgStart: true,
-    img: Icon3,
+    img: IconPhone,
     alt: "Car",
     dark: false,
     primary: false,
@@ -47,7 +47,7 @@ export const homeObjThree = {
     headline: "Creating an account is extremely easy",
     description:
         "Get everything set up and ready in under 10 minutes. All you need to do is add your information and you're ready to go.",
-    buttonLabel: "Start Now",
+    buttonLabelOne: "Start Now",
     imgStart: false,
     img: Icon2,
     alt: "Graph2",

@@ -40,13 +40,13 @@ const Navbar = ({ toggle }) => {
                     <NavbarContainer>
                         {/* normally you'd use "href", but react router uses "to" */}
                         <NavLogo to="/" onClick={toggleHome}>
-                            dolla
+                            flick
                         </NavLogo>
                         <MobileIcon onClick={toggle}>
                             <FaBars />
                         </MobileIcon>
                         <NavMenu>
-                            <NavItem>
+                            {/* <NavItem>
                                 <NavLinks
                                     to="about"
                                     smooth={true}
@@ -58,7 +58,7 @@ const Navbar = ({ toggle }) => {
                                 >
                                     About
                                 </NavLinks>
-                            </NavItem>
+                            </NavItem> */}
                             <NavItem>
                                 <NavLinks
                                     to="discover"
@@ -73,17 +73,17 @@ const Navbar = ({ toggle }) => {
                             </NavItem>
                             <NavItem>
                                 <NavLinks
-                                    to="services"
+                                    to="creators"
                                     smooth={true}
                                     duration={500}
                                     spy={true}
                                     exact="true"
                                     offset={-80}
                                 >
-                                    Services
+                                    Creators
                                 </NavLinks>
                             </NavItem>
-                            <NavItem>
+                            {/* <NavItem>
                                 <NavLinks
                                     to="signup"
                                     smooth={true}
@@ -94,11 +94,8 @@ const Navbar = ({ toggle }) => {
                                 >
                                     Sign Up
                                 </NavLinks>
-                            </NavItem>
+                            </NavItem> */}
                         </NavMenu>
-                        <NavBtn>
-                            <NavBtnLink to="/signin">Sign In</NavBtnLink>
-                        </NavBtn>
                     </NavbarContainer>
                 </Nav>
             </IconContext.Provider>
