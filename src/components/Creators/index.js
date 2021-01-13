@@ -21,7 +21,7 @@ import {
 
 const Creators = () => {
     return (
-        <CreatorsContainer id="Creators">
+        <CreatorsContainer id="creators">
             <CreatorsH1>Made by</CreatorsH1>
 
             <CreatorsSubtitle>

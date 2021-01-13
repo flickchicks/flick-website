@@ -20,7 +20,7 @@ import {
 
 const Discover = () => {
     return (
-        <DiscoverContainer id="Discover">
+        <DiscoverContainer id="discover">
             <DiscoverWrapper>
                 <DiscoverCard>
                     <DiscoverIcon src={Icon} />

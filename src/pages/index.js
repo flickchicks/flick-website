@@ -2,10 +2,9 @@ import React, { useState } from "react";
 import Navbar from "../components/Navbar";
 import Sidebar from "../components/Sidebar";
 import InfoSection from "../components/InfoSection";
-import { homeObjTwo, homeObjThree } from "../components/InfoSection/Data";
+import { homeObjTwo } from "../components/InfoSection/Data";
 import Creators from "../components/Creators";
 import Discover from "../components/Discover";
-
 import Footer from "../components/Footer";
 
 const Home = () => {

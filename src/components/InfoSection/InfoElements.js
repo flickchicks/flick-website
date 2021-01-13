@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { COLORS } from "../../Colors";
 
 export const InfoContainer = styled.div`
-    max-height: 1000px;
+    max-height: 1100px;
     color: COLORS.darkBlue;
     background: ${COLORS.backgroundPurple};
     /* ${({ lightBg }) => (lightBg ? "#f9f9f9" : "#010606")}; */
@@ -12,7 +12,7 @@ export const InfoContainer = styled.div`
         padding: 100px 0;
     }
     @media screen and (max-width: 768px) {
-        max-height: 1600px;
+        max-height: 1500px;
         padding: 100px 0;
     }
 `;

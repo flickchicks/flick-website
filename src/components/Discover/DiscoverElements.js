@@ -9,8 +9,8 @@ export const DiscoverContainer = styled.div`
     align-items: left;
     background: ${COLORS.backgroundPurple};
 
-    @media screen and (max-width: 1000px) {
-        height: 1500px;
+    @media screen and (max-width: 1050px) {
+        height: 1550px;
     }
 
     @media screen and (max-width: 768) {
@@ -19,8 +19,7 @@ export const DiscoverContainer = styled.div`
 `;
 
 export const DiscoverWrapper = styled.div`
-    margin: auto;
-    width: 1000px;
+    margin: 0 auto;
     display: grid;
     background-color: ${COLORS.backgroundPurple};
     /* three columns */
@@ -31,12 +30,13 @@ export const DiscoverWrapper = styled.div`
 
     /* as the screen gets smaller, knock off the number of columns */
     /* @media screen and (max-width: 1000px) {
-        grid-template-columns: 1fr 1fr;
+        grid-gap: 30px;
     } */
 
-    @media screen and (max-width: 1000px) {
+    @media screen and (max-width: 1050px) {
         grid-template-columns: 1fr;
         /* padding: 0 20px; */
+        /* grid-gap: 30px; */
     }
 `;
 

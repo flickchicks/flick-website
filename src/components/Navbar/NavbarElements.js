@@ -4,6 +4,7 @@ import { Link as LinkS } from "react-scroll";
 import { COLORS } from "../../Colors";
 
 export const Nav = styled.nav`
+    opacity: 0.9;
     background: ${({ scrollNav }) =>
         scrollNav ? COLORS.backgroundPurple : "transparent"};
     height: 80px;
@@ -16,7 +17,7 @@ export const Nav = styled.nav`
     z-index: 10;
 
     @media screen and (max-width: 960px) {
-        transition: 0.8s all ease;
+        transition: 0.5s all ease;
     }
 `;
 
@@ -80,7 +81,8 @@ export const NavItem = styled.li`
 `;
 
 export const NavLinks = styled(LinkS)`
-    color: black;
+    color: ${COLORS.darkBlue};
+    font-size: 1rem;
     display: flex;
     align-items: center;
     text-decoration: none;
@@ -88,9 +90,9 @@ export const NavLinks = styled(LinkS)`
     height: 100%;
     cursor: pointer;
 
-    /* whichever navbar tab you hit on, gets highlighted with green border  */
+    /* whichever navbar tab you hit on, gets highlighted with border  */
     &.active {
-        border-bottom: 3px solid ${COLORS.lightPurple};
+        border-bottom: 3px solid ${COLORS.darkPurple};
     }
 `;
 
@@ -123,8 +125,4 @@ export const NavBtnLink = styled(LinkR)`
     }
 `;
 
-export const NavImg = styled.img`
-    /* height: 160px;
-    width: 160px;
-    margin-bottom: 10px; */
-`;
+export const NavImg = styled.img``;
