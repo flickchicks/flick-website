@@ -63,8 +63,12 @@ export const FooterLink = styled(Link)`
     font-size: 14px;
 
     &:hover {
-        color: ${COLORS.darkPurple};
-        transition: 0.3s ease-out;
+        transform: scale(1.02);
+        transition: all 0.2s ease-in-out;
+        color: ${COLORS.darkPurple}
+        cursor: pointer;
+        filter: drop-shadow(10px 10px 20px rgba(138, 43, 226, 1));
+        
     }
 `;
 
@@ -115,7 +119,10 @@ export const SocialIconLink = styled.a`
     &:hover {
         transform: scale(1.2);
         transition: all 0.2s ease-in-out;
+        color: ${COLORS.darkPurple}
         cursor: pointer;
+        filter: drop-shadow(5px 5px 20px rgba(138, 43, 226, 1));
+        
     }
 `;
 

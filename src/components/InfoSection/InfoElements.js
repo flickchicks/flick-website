@@ -15,10 +15,15 @@ export const InfoContainer = styled.div`
         max-height: 1500px;
         padding: 100px 0;
     }
+    @media screen and (max-width: 440px) {
+        max-height: 1100px;
+        padding: 0 0;
+    }
 `;
 
 export const InfoWrapper = styled.div`
     display: grid;
+    color: red;
     z-index: 1;
     height: 1300px;
     width: 100%;
@@ -33,6 +38,11 @@ export const InfoWrapper = styled.div`
     }
     @media screen and (max-width: 768px) {
         max-height: 1300px;
+        padding: 100px 0;
+    }
+
+    @media screen and (max-width: 440px) {
+        max-height: 500px;
         padding: 100px 0;
     }
 `;
@@ -66,6 +76,10 @@ export const TextWrapper = styled.div`
     max-width: 540px;
     padding-top: 0;
     padding-bottom: 60px;
+
+    @media screen and (max-width: 440px) {
+        max-width: 200px;
+    }
 `;
 
 export const TopLine = styled.p`
@@ -88,6 +102,10 @@ export const Heading = styled.h1`
     @media screen and (max-width: 480px) {
         font-size: 32px;
     }
+
+    @media screen and (max-width: 440px) {
+        font-size: 24px;
+    }
 `;
 
 export const Subtitle = styled.p`
@@ -96,6 +114,10 @@ export const Subtitle = styled.p`
     font-size: 18px;
     line-height: 24px;
     color: ${({ darkText }) => (darkText ? COLORS.darkBlue : "#fff")};
+    @media screen and (max-width: 440px) {
+        font-size: 16px;
+        padding: 0 0;
+    }
 `;
 
 export const BtnWrap = styled.div`
@@ -116,6 +138,9 @@ export const Img = styled.img`
         transform: scale(1.02);
         transition: all 0.2s ease-in-out;
         cursor: pointer;
+    }
+    @media screen and (max-width: 440px) {
+        width: 70%;
     }
 `;
 

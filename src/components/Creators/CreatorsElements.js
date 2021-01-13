@@ -17,8 +17,8 @@ export const CreatorsContainer = styled.div`
         height: 2300px;
     }
 
-    @media screen and (max-width: 480px) {
-        height: 3900px;
+    @media screen and (max-width: 440px) {
+        height: 2500px;
     }
 `;
 
