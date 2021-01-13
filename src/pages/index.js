@@ -4,6 +4,8 @@ import Sidebar from "../components/Sidebar";
 import InfoSection from "../components/InfoSection";
 import { homeObjTwo, homeObjThree } from "../components/InfoSection/Data";
 import Creators from "../components/Creators";
+import Discover from "../components/Discover";
+
 import Footer from "../components/Footer";
 
 const Home = () => {
@@ -18,7 +20,7 @@ const Home = () => {
             <Sidebar isOpen={isOpen} toggle={toggle} />
             <Navbar toggle={toggle} />
             <InfoSection {...homeObjTwo} />
-            {/* <InfoSection {...homeObjThree} /> */}
+            <Discover />
             <Creators />
             <Footer />
         </>

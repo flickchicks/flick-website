@@ -2,11 +2,17 @@ import styled from "styled-components";
 import { COLORS } from "../../Colors";
 
 export const InfoContainer = styled.div`
-    color: #fff;
+    max-height: 1000px;
+    color: COLORS.darkBlue;
     background: ${COLORS.backgroundPurple};
     /* ${({ lightBg }) => (lightBg ? "#f9f9f9" : "#010606")}; */
 
+    @media screen and (max-width: 1000px) {
+        max-height: 1300px;
+        padding: 100px 0;
+    }
     @media screen and (max-width: 768px) {
+        max-height: 1600px;
         padding: 100px 0;
     }
 `;
@@ -14,13 +20,21 @@ export const InfoContainer = styled.div`
 export const InfoWrapper = styled.div`
     display: grid;
     z-index: 1;
-    height: 860px;
+    height: 1300px;
     width: 100%;
     max-width: 1100px;
     margin-right: auto;
     margin-left: auto;
     padding: 0 24px;
     justify-content: center;
+
+    @media screen and (max-width: 1000px) {
+        max-height: 900px;
+    }
+    @media screen and (max-width: 768px) {
+        max-height: 1300px;
+        padding: 100px 0;
+    }
 `;
 
 export const InfoRow = styled.div`
@@ -69,7 +83,7 @@ export const Heading = styled.h1`
     font-size: 48px;
     line-height: 1.1;
     font-weight: 600;
-    color: ${({ lightText }) => (lightText ? "#f7f8fa" : "#010606")};
+    color: ${({ lightText }) => (lightText ? "#f7f8fa" : COLORS.darkBlue)};
 
     @media screen and (max-width: 480px) {
         font-size: 32px;
@@ -81,7 +95,7 @@ export const Subtitle = styled.p`
     margin-bottom: 35px;
     font-size: 18px;
     line-height: 24px;
-    color: ${({ darkText }) => (darkText ? "#010606" : "#fff")};
+    color: ${({ darkText }) => (darkText ? COLORS.darkBlue : "#fff")};
 `;
 
 export const BtnWrap = styled.div`
@@ -96,6 +110,22 @@ export const ImgWrap = styled.div`
 
 export const Img = styled.img`
     width: 100%;
-    margin: 0 0 10px 0;
+    margin: 0 0 0 0;
     padding-right: 0;
+    &:hover {
+        transform: scale(1.02);
+        transition: all 0.2s ease-in-out;
+        cursor: pointer;
+    }
+`;
+
+export const SwirlyImg = styled.img`
+    width: 100%;
+    margin: 0 0 30px 0;
+    padding-right: 0;
+    &:hover {
+        transform: scale(1.05);
+        transition: all 0.2s ease-in-out;
+        cursor: pointer;
+    }
 `;

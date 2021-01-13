@@ -1,5 +1,6 @@
 import React from "react";
 import { Button } from "../ButtonElements";
+import Icon1 from "../../images/swirly.svg";
 
 import {
     InfoContainer,
@@ -14,6 +15,7 @@ import {
     Column2,
     ImgWrap,
     Img,
+    SwirlyImg,
 } from "./InfoElements";
 
 const InfoSection = ({
@@ -44,9 +46,13 @@ const InfoSection = ({
                                 <Heading lightText={lightText}>
                                     {headline}
                                 </Heading>
+                                <ImgWrap>
+                                    <SwirlyImg src={Icon1} />
+                                </ImgWrap>
                                 <Subtitle darkText={darkText}>
                                     {description}
                                 </Subtitle>
+
                                 <BtnWrap>
                                     <Button
                                         to="home"

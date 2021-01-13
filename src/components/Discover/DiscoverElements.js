@@ -1,57 +1,54 @@
 import styled from "styled-components";
 import { COLORS } from "../../Colors";
 
-export const CreatorsContainer = styled.div`
-    height: 1200px;
+export const DiscoverContainer = styled.div`
+    height: 800px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: left;
     background: ${COLORS.backgroundPurple};
 
     @media screen and (max-width: 1000px) {
         height: 1500px;
     }
 
-    @media screen and (max-width: 768px) {
-        height: 2300px;
-    }
-
-    @media screen and (max-width: 480px) {
-        height: 3900px;
+    @media screen and (max-width: 768) {
+        height: 1600px;
     }
 `;
 
-export const CreatorsWrapper = styled.div`
-    max-width: 1000px;
-    margin: 0 auto;
+export const DiscoverWrapper = styled.div`
+    margin: auto;
+    width: 1000px;
     display: grid;
+    background-color: ${COLORS.backgroundPurple};
     /* three columns */
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     align-items: center;
-    grid-gap: 16px;
-    padding: 0 50px;
+    grid-gap: 200px;
+    /* padding: 100px 100px 100px 100px; */
 
     /* as the screen gets smaller, knock off the number of columns */
-    @media screen and (max-width: 1000px) {
+    /* @media screen and (max-width: 1000px) {
         grid-template-columns: 1fr 1fr;
-    }
+    } */
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 1000px) {
         grid-template-columns: 1fr;
-        padding: 0 20px;
+        /* padding: 0 20px; */
     }
 `;
 
-export const CreatorsCard = styled.div`
+export const DiscoverCard = styled.div`
     background: ${COLORS.backgroundPurple};
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     border-radius: 10px;
-    max-height: 340px;
-    padding: 30px;
+    max-height: 900px;
+    /* padding: 10px; */
     /* box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2); */
     /* transition: all 0.2s ease-in-out;
     &:hover {
@@ -61,10 +58,13 @@ export const CreatorsCard = styled.div`
     } */
 `;
 
-export const CreatorsIcon = styled.img`
-    height: 160px;
-    width: 160px;
-    margin-bottom: 10px;
+export const DiscoverIcon = styled.img`
+    height: 400px;
+    width: 400px;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    margin-bottom: 5px;
     &:hover {
         transform: scale(1.02);
         transition: all 0.2s ease-in-out;
@@ -72,7 +72,7 @@ export const CreatorsIcon = styled.img`
     }
 `;
 
-export const CreatorsH1 = styled.h1`
+export const DiscoverH1 = styled.h1`
     font-size: 2.5rem;
     color: black;
     margin-bottom: 30px;
@@ -82,33 +82,26 @@ export const CreatorsH1 = styled.h1`
     }
 `;
 
-export const CreatorsSubtitle = styled.h1`
+export const DiscoverSubtitle = styled.h1`
     font-size: 1rem;
-    color: ${COLORS.darkBlueGray};
+    color: ${COLORS.back};
     margin-bottom: 30px;
     font-weight: 500;
-    text-align: center;
 `;
 
-export const CreatorsH2 = styled.h2`
-    font-size: 1rem;
+export const DiscoverH2 = styled.h2`
+    font-size: 1.5rem;
     color: ${COLORS.darkBlue};
     margin-bottom: 10px;
+
+    @media screen and (max-width: 768px) {
+        font-size: 1.25rem;
+    }
 `;
 
-export const CreatorsP = styled.p`
+export const DiscoverP = styled.p`
     font-size: 16px;
     color: ${COLORS.mediumGray};
     text-align: center;
     font-weight: 500;
-`;
-
-export const TextWrapper = styled.div`
-    max-width: 540px;
-    padding-top: 0;
-    padding-bottom: 60px;
-
-    @media screen and (max-width: 768px) {
-        max-width: 350px;
-    }
 `;

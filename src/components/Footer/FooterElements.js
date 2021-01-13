@@ -36,9 +36,10 @@ export const FooterLinksWrapper = styled.div`
 export const FooterLinkItems = styled.div`
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    /* align-items: flex-start */
+    align-items: center;
     margin: 16px;
-    text-align: left;
+    text-align: center;
     width: 160px;
     box-sizing: border-box;
     color: ${COLORS.darkBlue};
@@ -111,6 +112,17 @@ export const SocialIcons = styled.div`
 export const SocialIconLink = styled.a`
     color: ${COLORS.darkBlue};
     font-size: 24px;
+    &:hover {
+        transform: scale(1.2);
+        transition: all 0.2s ease-in-out;
+        cursor: pointer;
+    }
 `;
 
-export const FooterImg = styled.img``;
+export const FooterImg = styled.img`
+    &:hover {
+        transform: scale(1.05);
+        transition: all 0.2s ease-in-out;
+        cursor: pointer;
+    }
+`;

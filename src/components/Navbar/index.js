@@ -51,19 +51,6 @@ const Navbar = ({ toggle }) => {
                             <FaBars />
                         </MobileIcon>
                         <NavMenu>
-                            {/* <NavItem>
-                                <NavLinks
-                                    to="about"
-                                    smooth={true}
-                                    duration={500}
-                                    spy={true}
-                                    exact="true"
-                                    offset={-80}
-                                    // activeClass="active" if didn't use styled components
-                                >
-                                    About
-                                </NavLinks>
-                            </NavItem> */}
                             <NavItem>
                                 <NavLinks
                                     to="discover"
