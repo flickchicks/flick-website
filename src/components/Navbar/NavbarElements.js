@@ -117,3 +117,9 @@ export const NavBtnLink = styled(LinkR)`
         color: #010606;
     }
 `;
+
+export const NavImg = styled.img`
+    /* height: 160px;
+    width: 160px;
+    margin-bottom: 10px; */
+`;

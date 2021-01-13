@@ -34,7 +34,7 @@ export const Icon = styled.div`
 `;
 
 export const SidebarWrapper = styled.div`
-    color: ${COLORS.darkPurple};
+    color: ${COLORS.lightPurple};
 `;
 
 export const SidebarMenu = styled.ul`
@@ -58,11 +58,11 @@ export const SidebarLink = styled(LinkS)`
     list-style: noen;
     transition: 0.2s ease-in-out;
     text-decoration: none;
-    color: ${COLORS.darkPurple};
+    color: ${COLORS.darkBlue};
     cursor: pointer;
 
     &:hover {
-        color: #01bf71;
+        color: ${COLORS.darkPurple};
         transition: 0.2s ease-in-out;
     }
 `;
@@ -74,7 +74,7 @@ export const SideBtnWrap = styled.div`
 
 export const SidebarRoute = styled(LinkR)`
     border-radius: 50px;
-    background: #01bf71;
+    background: ${COLORS.darkPurple};
     white-space: nowrap;
     padding: 16px 64px;
     color: #010606;

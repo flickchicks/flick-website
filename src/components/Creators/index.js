@@ -55,6 +55,9 @@ const Creators = () => {
                 <CreatorsCard>
                     <CreatorsIcon src={Icon6} />
                 </CreatorsCard>
+                <CreatorsCard>
+                    <CreatorsIcon src={Icon7} />
+                </CreatorsCard>
             </CreatorsWrapper>
         </CreatorsContainer>
     );

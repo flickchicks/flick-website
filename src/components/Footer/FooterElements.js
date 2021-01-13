@@ -112,3 +112,5 @@ export const SocialIconLink = styled.a`
     color: ${COLORS.darkBlue};
     font-size: 24px;
 `;
+
+export const FooterImg = styled.img``;
