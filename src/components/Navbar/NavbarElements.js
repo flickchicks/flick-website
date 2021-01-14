@@ -30,6 +30,14 @@ export const NavbarContainer = styled.div`
     width: 100%;
     padding: 0 24px;
     max-width: 1100px;
+
+    @media screen and (max-width: 768px) {
+        width: 768px;
+    }
+
+    @media screen and (max-width: 440px) {
+        width: 440px;
+    }
 `;
 
 export const NavLogo = styled(LinkR)`
@@ -134,4 +142,8 @@ export const NavBtnLink = styled(LinkR)`
     }
 `;
 
-export const NavImg = styled.img``;
+export const NavImg = styled.img`
+    @media screen and (max-width: 440px) {
+        max-width: 50px;
+    }
+`;

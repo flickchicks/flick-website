@@ -27,17 +27,26 @@ export const CreatorsWrapper = styled.div`
     margin: 0 auto;
     display: grid;
     /* three columns */
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     align-items: center;
     grid-gap: 16px;
     padding: 0 50px;
 
     /* as the screen gets smaller, knock off the number of columns */
     @media screen and (max-width: 1000px) {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
     }
 
+    /* @media screen and (max-width: 1000px) {
+        grid-template-columns: 1fr 1fr;
+    } */
+
     @media screen and (max-width: 768px) {
+        grid-template-columns: 1fr 1fr;
+        padding: 0 20px;
+    }
+
+    @media screen and (max-width: 500px) {
         grid-template-columns: 1fr;
         padding: 0 20px;
     }
@@ -83,7 +92,7 @@ export const CreatorsH1 = styled.h1`
 `;
 
 export const CreatorsSubtitle = styled.h1`
-    font-size: 1rem;
+    font-size: 18px;
     color: ${COLORS.darkBlueGray};
     margin-bottom: 30px;
     font-weight: 500;
@@ -91,7 +100,7 @@ export const CreatorsSubtitle = styled.h1`
 `;
 
 export const CreatorsH2 = styled.h2`
-    font-size: 1rem;
+    font-size: 20px;
     color: ${COLORS.darkBlue};
     margin-bottom: 10px;
 `;
@@ -104,11 +113,11 @@ export const CreatorsP = styled.p`
 `;
 
 export const TextWrapper = styled.div`
-    max-width: 540px;
+    max-width: 800px;
     padding-top: 0;
     padding-bottom: 60px;
 
     @media screen and (max-width: 768px) {
-        max-width: 350px;
+        max-width: 440px;
     }
 `;

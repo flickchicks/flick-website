@@ -24,8 +24,4 @@ export const Button = styled(Link)`
         background: ${({ primary }) => (primary ? "#fff" : COLORS.darkPurple)};
         color: white;
     }
-
-    @media screen and (max-width: 440px) {
-        font-size: 12px;
-    }
 `;

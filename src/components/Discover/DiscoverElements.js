@@ -18,7 +18,7 @@ export const DiscoverContainer = styled.div`
     }
 
     @media screen and (max-width: 440px) {
-        height: 900;
+        height: 1200px;
     }
 `;
 
@@ -44,7 +44,7 @@ export const DiscoverWrapper = styled.div`
     }
 
     @media screen and (max-width: 440px) {
-        grid-gap: 10px;
+        grid-gap: 50px;
     }
 `;
 
@@ -79,8 +79,8 @@ export const DiscoverIcon = styled.img`
         cursor: pointer;
     }
     @media screen and (max-width: 440px) {
-        height: 200px;
-        width: 200px;
+        height: 370px;
+        width: 370px;
     }
 `;
 
@@ -110,9 +110,9 @@ export const DiscoverH2 = styled.h2`
         font-size: 1.25rem;
     }
 
-    @media screen and (max-width: 440px) {
+    /* @media screen and (max-width: 440px) {
         font-size: 0.8rem;
-    }
+    } */
 `;
 
 export const DiscoverP = styled.p`

@@ -16,7 +16,7 @@ export const InfoContainer = styled.div`
         padding: 100px 0;
     }
     @media screen and (max-width: 440px) {
-        max-height: 1100px;
+        max-height: 1200px;
         padding: 0 0;
     }
 `;
@@ -40,9 +40,8 @@ export const InfoWrapper = styled.div`
         max-height: 1300px;
         padding: 100px 0;
     }
-
     @media screen and (max-width: 440px) {
-        max-height: 500px;
+        max-height: 1400px;
         padding: 100px 0;
     }
 `;
@@ -61,13 +60,13 @@ export const InfoRow = styled.div`
 `;
 
 export const Column1 = styled.div`
-    margin-bottom: 15px;
+    /* margin-bottom: 15px; */
     padding: 0 15px;
     grid-area: col1;
 `;
 
 export const Column2 = styled.div`
-    margin-bottom: 15px;
+    /* margin-bottom: 15px; */
     padding: 0 15px;
     grid-area: col2;
 `;
@@ -76,9 +75,9 @@ export const TextWrapper = styled.div`
     max-width: 540px;
     padding-top: 0;
     padding-bottom: 60px;
-
-    @media screen and (max-width: 440px) {
-        max-width: 200px;
+    @media screen and (max-width: 650px) {
+        /* max-width: 290px; */
+        padding: 0 20px;
     }
 `;
 
@@ -101,10 +100,7 @@ export const Heading = styled.h1`
 
     @media screen and (max-width: 480px) {
         font-size: 32px;
-    }
-
-    @media screen and (max-width: 440px) {
-        font-size: 24px;
+        padding: 0 0 30px;
     }
 `;
 
@@ -114,20 +110,24 @@ export const Subtitle = styled.p`
     font-size: 18px;
     line-height: 24px;
     color: ${({ darkText }) => (darkText ? COLORS.darkBlue : "#fff")};
-    @media screen and (max-width: 440px) {
-        font-size: 16px;
-        padding: 0 0;
+
+    @media screen and (max-width: 480px) {
+        text-align: center;
     }
 `;
 
 export const BtnWrap = styled.div`
     display: flex;
     justify-content: flex-start;
+    @media screen and (max-width: 480px) {
+        justify-content: center;
+    }
 `;
 
 export const ImgWrap = styled.div`
     max-width: 555px;
     height: 100%;
+    padding: 0;
 `;
 
 export const Img = styled.img`
@@ -139,9 +139,6 @@ export const Img = styled.img`
         transition: all 0.2s ease-in-out;
         cursor: pointer;
     }
-    @media screen and (max-width: 440px) {
-        width: 70%;
-    }
 `;
 
 export const SwirlyImg = styled.img`
@@ -152,5 +149,10 @@ export const SwirlyImg = styled.img`
         transform: scale(1.05);
         transition: all 0.2s ease-in-out;
         cursor: pointer;
+    }
+
+    @media screen and (max-width: 480px) {
+        /* max-width: 290px; */
+        padding: 0 0 50px;
     }
 `;
