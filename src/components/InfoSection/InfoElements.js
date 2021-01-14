@@ -3,7 +3,6 @@ import { COLORS } from "../../Colors";
 
 export const InfoContainer = styled.div`
     max-height: 1100px;
-    color: COLORS.darkBlue;
     background: ${COLORS.backgroundPurple};
     /* ${({ lightBg }) => (lightBg ? "#f9f9f9" : "#010606")}; */
 
@@ -23,10 +22,9 @@ export const InfoContainer = styled.div`
 
 export const InfoWrapper = styled.div`
     display: grid;
-    color: red;
     z-index: 1;
-    height: 1300px;
     width: 100%;
+    height: 50vw;
     max-width: 1100px;
     margin-right: auto;
     margin-left: auto;
