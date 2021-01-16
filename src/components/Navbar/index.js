@@ -51,7 +51,7 @@ const Navbar = ({ toggle }) => {
                             <FaBars />
                         </MobileIcon>
                         <NavMenu>
-                            <NavItem>
+                            {/* <NavItem>
                                 <NavLinks
                                     to="discover"
                                     smooth={true}
@@ -74,7 +74,7 @@ const Navbar = ({ toggle }) => {
                                 >
                                     Creators
                                 </NavLinks>
-                            </NavItem>
+                            </NavItem> */}
                             {/* <NavItem>
                                 <NavLinks
                                     to="signup"
