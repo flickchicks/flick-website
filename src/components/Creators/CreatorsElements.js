@@ -97,6 +97,9 @@ export const CreatorsSubtitle = styled.h1`
     margin-bottom: 30px;
     font-weight: 500;
     text-align: center;
+    @media screen and (max-width: 500px) {
+        /* font-size: 14px; */
+    }
 `;
 
 export const CreatorsH2 = styled.h2`
@@ -119,5 +122,9 @@ export const TextWrapper = styled.div`
 
     @media screen and (max-width: 768px) {
         max-width: 440px;
+    }
+
+    @media screen and (max-width: 440px) {
+        max-width: 300px;
     }
 `;

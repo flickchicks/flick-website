@@ -110,9 +110,9 @@ export const DiscoverH2 = styled.h2`
         font-size: 1.25rem;
     }
 
-    /* @media screen and (max-width: 440px) {
-        font-size: 0.8rem;
-    } */
+    @media screen and (max-width: 440px) {
+        font-size: 1rem;
+    }
 `;
 
 export const DiscoverP = styled.p`

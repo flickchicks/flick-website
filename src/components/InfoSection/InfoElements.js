@@ -4,8 +4,7 @@ import { COLORS } from "../../Colors";
 export const InfoContainer = styled.div`
     max-height: 1100px;
     background: ${COLORS.backgroundPurple};
-    /* ${({ lightBg }) => (lightBg ? "#f9f9f9" : "#010606")}; */
-
+    width: 100%;
     @media screen and (max-width: 1000px) {
         max-height: 1300px;
         padding: 100px 0;
@@ -139,9 +138,13 @@ export const Img = styled.img`
     }
     @media screen and (max-width: 768px) {
         margin-left: 50px;
+        margin-top: 60px;
     }
     @media screen and (max-width: 440px) {
         margin-left: 30px;
+    }
+    @media screen and (max-width: 300px) {
+        margin-left: 20px;
     }
 `;
 

@@ -1,5 +1,5 @@
 import Icon2 from "../../images/svg-2.svg";
-import IconPhone from "../../images/iphone.svg";
+import IconPhone from "../../images/iphone.png";
 
 // export const homeObjOne = {
 //     id: "about",
