@@ -28,7 +28,7 @@ export const InfoWrapper = styled.div`
     max-width: 1100px;
     margin-right: auto;
     margin-left: auto;
-    padding: 0 24px;
+    padding: 200px 24px;
     justify-content: center;
 
     @media screen and (max-width: 1000px) {
@@ -36,7 +36,7 @@ export const InfoWrapper = styled.div`
     }
     @media screen and (max-width: 768px) {
         max-height: 1300px;
-        padding: 100px 0;
+        padding: 100px 0px;
     }
     @media screen and (max-width: 440px) {
         max-height: 1400px;
@@ -136,6 +136,12 @@ export const Img = styled.img`
         transform: scale(1.02);
         transition: all 0.2s ease-in-out;
         cursor: pointer;
+    }
+    @media screen and (max-width: 768px) {
+        margin-left: 50px;
+    }
+    @media screen and (max-width: 440px) {
+        margin-left: 30px;
     }
 `;
 
