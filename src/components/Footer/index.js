@@ -41,7 +41,9 @@ const Footer = () => {
                         </FooterLinkItems>
                         <FooterLinkItems>
                             {/* <FooterLinkTitle>About Us</FooterLinkTitle> */}
-                            <FooterLink to="/signin">Privacy Policy</FooterLink>
+                            <FooterLink to="/privacy">
+                                Privacy Policy
+                            </FooterLink>
                         </FooterLinkItems>
                         <FooterLinkItems>
                             {/* <FooterLinkTitle>About Us</FooterLinkTitle> */}
