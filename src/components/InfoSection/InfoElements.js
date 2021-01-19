@@ -57,13 +57,11 @@ export const InfoRow = styled.div`
 `;
 
 export const Column1 = styled.div`
-    /* margin-bottom: 15px; */
     padding: 0 15px;
     grid-area: col1;
 `;
 
 export const Column2 = styled.div`
-    /* margin-bottom: 15px; */
     padding: 0 15px;
     grid-area: col2;
 `;
@@ -73,19 +71,8 @@ export const TextWrapper = styled.div`
     padding-top: 0;
     padding-bottom: 60px;
     @media screen and (max-width: 650px) {
-        /* max-width: 290px; */
         padding: 0 20px;
     }
-`;
-
-export const TopLine = styled.p`
-    color: #01bf71;
-    font-size: 16px;
-    line-height: 16px;
-    font-weight: 700;
-    letter-spacing: 1.5px;
-    text-transform: uppercase;
-    margin-bottom: 16px;
 `;
 
 export const Heading = styled.h1`
@@ -93,7 +80,7 @@ export const Heading = styled.h1`
     font-size: 48px;
     line-height: 1.1;
     font-weight: 600;
-    color: ${({ lightText }) => (lightText ? "#f7f8fa" : COLORS.darkBlue)};
+    color: ${COLORS.darkBlue};
 
     @media screen and (max-width: 480px) {
         font-size: 32px;
@@ -106,7 +93,7 @@ export const Subtitle = styled.p`
     margin-bottom: 35px;
     font-size: 18px;
     line-height: 24px;
-    color: ${({ darkText }) => (darkText ? COLORS.darkBlue : "#fff")};
+    color: ${COLORS.darkBlue};
 
     @media screen and (max-width: 480px) {
         text-align: center;
@@ -159,7 +146,6 @@ export const SwirlyImg = styled.img`
     }
 
     @media screen and (max-width: 480px) {
-        /* max-width: 290px; */
         padding: 0 0 50px;
     }
 `;

@@ -15,13 +15,13 @@ import {
     CreatorsH1,
     CreatorsSubtitle,
     CreatorsWrapper,
-    CreatorsCard,
-    CreatorsIcon,
-    CreatorsH2,
-    CreatorsP,
+    CreatorCard,
+    CreatorIcon,
+    CreatorName,
+    CreatorRole,
     TextWrapper,
-    CreatorsIconGroupLarge,
-    CreatorsIconGroupMedium,
+    CreatorIconGroupLarge,
+    CreatorIconGroupMedium,
 } from "./CreatorsElements";
 
 const Creators = () => {
@@ -35,47 +35,46 @@ const Creators = () => {
                     instead of work.
                 </TextWrapper>
             </CreatorsSubtitle>
-            <CreatorsIconGroupLarge src={IconGroupLarge} />
-            <CreatorsIconGroupMedium src={IconGroupMediumOne} />
-            <CreatorsIconGroupMedium src={IconGroupMediumTwo} />
+            <CreatorIconGroupLarge src={IconGroupLarge} />
+            <CreatorIconGroupMedium src={IconGroupMediumOne} />
+            <CreatorIconGroupMedium src={IconGroupMediumTwo} />
 
             <CreatorsWrapper>
-                <CreatorsCard>
-                    <CreatorsIcon src={IconAlanna} />
-                    <CreatorsH2>Alanna</CreatorsH2>
-                    <CreatorsP>Backend Developer</CreatorsP>
-                </CreatorsCard>
-                <CreatorsCard>
-                    <CreatorsIcon src={IconVivi} />
-                    <CreatorsH2>Vivi</CreatorsH2>
-                    <CreatorsP>Backend Developer</CreatorsP>
-                </CreatorsCard>
-                <CreatorsCard>
-                    <CreatorsIcon src={IconOlivia} />
-                    <CreatorsH2>Olivia</CreatorsH2>
-                    <CreatorsP>Backend Developer</CreatorsP>
-                </CreatorsCard>
-                <CreatorsCard>
-                    <CreatorsIcon src={IconHaiying} />
-                    <CreatorsH2>Haiying</CreatorsH2>
-                    <CreatorsP>iOS Developer</CreatorsP>
-                </CreatorsCard>
-                <CreatorsCard>
-                    <CreatorsIcon src={IconLucy} />
-                    <CreatorsH2>Lucy</CreatorsH2>
-                    <CreatorsP>iOS Developer</CreatorsP>
-                </CreatorsCard>
-                <CreatorsCard>
-                    <CreatorsIcon src={IconAastha} />
-                    <CreatorsH2>Aastha</CreatorsH2>
-                    <CreatorsP>Android Developer</CreatorsP>
-                </CreatorsCard>
-
-                <CreatorsCard>
-                    <CreatorsIcon src={IconCindy} />
-                    <CreatorsH2>Cindy</CreatorsH2>
-                    <CreatorsP>Designer</CreatorsP>
-                </CreatorsCard>
+                <CreatorCard>
+                    <CreatorIcon src={IconAlanna} />
+                    <CreatorName>Alanna</CreatorName>
+                    <CreatorRole>Backend Developer</CreatorRole>
+                </CreatorCard>
+                <CreatorCard>
+                    <CreatorIcon src={IconVivi} />
+                    <CreatorName>Vivi</CreatorName>
+                    <CreatorRole>Backend Developer</CreatorRole>
+                </CreatorCard>
+                <CreatorCard>
+                    <CreatorIcon src={IconOlivia} />
+                    <CreatorName>Olivia</CreatorName>
+                    <CreatorRole>Backend Developer</CreatorRole>
+                </CreatorCard>
+                <CreatorCard>
+                    <CreatorIcon src={IconHaiying} />
+                    <CreatorName>Haiying</CreatorName>
+                    <CreatorRole>iOS Developer</CreatorRole>
+                </CreatorCard>
+                <CreatorCard>
+                    <CreatorIcon src={IconLucy} />
+                    <CreatorName>Lucy</CreatorName>
+                    <CreatorRole>iOS Developer</CreatorRole>
+                </CreatorCard>
+                <CreatorCard>
+                    <CreatorIcon src={IconAastha} />
+                    <CreatorName>Aastha</CreatorName>
+                    <CreatorRole>Android Developer</CreatorRole>
+                </CreatorCard>
+                <CreatorCard>
+                    <CreatorIcon src={IconCindy} />
+                    <CreatorName>Cindy</CreatorName>
+                    <CreatorRole>Designer</CreatorRole>
+                </CreatorCard>
             </CreatorsWrapper>
         </CreatorsContainer>
     );

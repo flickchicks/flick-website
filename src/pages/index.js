@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Navbar from "../components/Navbar";
 import Sidebar from "../components/Sidebar";
 import InfoSection from "../components/InfoSection";
-import { homeObjTwo } from "../components/InfoSection/Data";
+import { InfoObj } from "../components/InfoSection/Data";
 import Creators from "../components/Creators";
 import Discover from "../components/Discover";
 import Footer from "../components/Footer";
@@ -18,7 +18,7 @@ const Home = () => {
         <>
             <Sidebar isOpen={isOpen} toggle={toggle} />
             <Navbar toggle={toggle} />
-            <InfoSection {...homeObjTwo} />
+            <InfoSection {...InfoObj} />
             <Discover />
             <Creators />
             <Footer />

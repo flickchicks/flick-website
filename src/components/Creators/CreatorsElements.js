@@ -52,7 +52,7 @@ export const CreatorsWrapper = styled.div`
     }
 `;
 
-export const CreatorsCard = styled.div`
+export const CreatorCard = styled.div`
     background: ${COLORS.backgroundPurple};
     display: flex;
     flex-direction: column;
@@ -70,7 +70,7 @@ export const CreatorsCard = styled.div`
     } */
 `;
 
-export const CreatorsIcon = styled.img`
+export const CreatorIcon = styled.img`
     display: none;
     /* margin-bottom: 10px; */
     &:hover {
@@ -86,14 +86,14 @@ export const CreatorsIcon = styled.img`
     }
 `;
 
-export const CreatorsIconGroupLarge = styled.img`
+export const CreatorIconGroupLarge = styled.img`
     width: 80%;
     @media screen and (max-width: 1200px) {
         display: none;
     }
 `;
 
-export const CreatorsIconGroupMedium = styled.img`
+export const CreatorIconGroupMedium = styled.img`
     /* width: 80%; */
     height: 20%;
     display: none;
@@ -135,7 +135,7 @@ export const CreatorsSubtitle = styled.h1`
     }
 `;
 
-export const CreatorsH2 = styled.h2`
+export const CreatorName = styled.h2`
     font-size: 20px;
     color: ${COLORS.darkBlue};
     margin-bottom: 10px;
@@ -146,7 +146,7 @@ export const CreatorsH2 = styled.h2`
     }
 `;
 
-export const CreatorsP = styled.p`
+export const CreatorRole = styled.p`
     font-size: 16px;
     color: ${COLORS.mediumGray};
     text-align: center;

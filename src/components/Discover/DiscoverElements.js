@@ -84,24 +84,7 @@ export const DiscoverIcon = styled.img`
     }
 `;
 
-export const DiscoverH1 = styled.h1`
-    font-size: 2.5rem;
-    color: black;
-    margin-bottom: 30px;
-
-    @media screen and (max-width: 480px) {
-        font-size: 2rem;
-    }
-`;
-
-export const DiscoverSubtitle = styled.h1`
-    font-size: 1rem;
-    color: ${COLORS.back};
-    margin-bottom: 30px;
-    font-weight: 500;
-`;
-
-export const DiscoverH2 = styled.h2`
+export const DiscoverText = styled.h2`
     font-size: 1.5rem;
     color: ${COLORS.darkBlue};
     margin-bottom: 10px;
@@ -113,11 +96,4 @@ export const DiscoverH2 = styled.h2`
     @media screen and (max-width: 440px) {
         font-size: 1rem;
     }
-`;
-
-export const DiscoverP = styled.p`
-    font-size: 16px;
-    color: ${COLORS.mediumGray};
-    text-align: center;
-    font-weight: 500;
 `;

@@ -23,8 +23,7 @@ import {
     SocialIconLink,
     FooterImg,
 } from "./FooterElements";
-import Icon1 from "../../images/logo.svg";
-import Icon2 from "../../images/flick.svg";
+import Icon from "../../images/flick.svg";
 
 const Footer = () => {
     const toggleHome = () => {
@@ -54,7 +53,7 @@ const Footer = () => {
                 <SocialMedia>
                     <SocialMediaWrap>
                         <SocialLogo to="/" onClick={toggleHome}>
-                            <FooterImg src={Icon2} />
+                            <FooterImg src={Icon} />
                         </SocialLogo>
                         <WebsiteRights>
                             flick © {new Date().getFullYear()} All rights
