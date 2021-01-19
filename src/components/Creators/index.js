@@ -1,11 +1,14 @@
 import React from "react";
-import Icon1 from "../../images/alanna.svg";
-import Icon2 from "../../images/aastha.svg";
-import Icon3 from "../../images/haiying.svg";
-import Icon4 from "../../images/lucy.svg";
-import Icon5 from "../../images/olivia.svg";
-import Icon6 from "../../images/vivi.svg";
-import Icon7 from "../../images/cindy.svg";
+import IconAlanna from "../../images/alanna.svg";
+import IconAastha from "../../images/aastha.svg";
+import IconHaiying from "../../images/haiying.svg";
+import IconLucy from "../../images/lucy.svg";
+import IconOlivia from "../../images/olivia.svg";
+import IconVivi from "../../images/vivi.svg";
+import IconCindy from "../../images/cindy.svg";
+import IconGroupLarge from "../../images/groupLarge.svg";
+import IconGroupMediumOne from "../../images/groupMediumOne.svg";
+import IconGroupMediumTwo from "../../images/groupMediumTwo.svg";
 
 import {
     CreatorsContainer,
@@ -17,6 +20,8 @@ import {
     CreatorsH2,
     CreatorsP,
     TextWrapper,
+    CreatorsIconGroupLarge,
+    CreatorsIconGroupMedium,
 } from "./CreatorsElements";
 
 const Creators = () => {
@@ -30,39 +35,44 @@ const Creators = () => {
                     instead of work.
                 </TextWrapper>
             </CreatorsSubtitle>
+            <CreatorsIconGroupLarge src={IconGroupLarge} />
+            <CreatorsIconGroupMedium src={IconGroupMediumOne} />
+            <CreatorsIconGroupMedium src={IconGroupMediumTwo} />
+
             <CreatorsWrapper>
                 <CreatorsCard>
-                    <CreatorsIcon src={Icon1} />
+                    <CreatorsIcon src={IconAlanna} />
                     <CreatorsH2>Alanna</CreatorsH2>
-                    <CreatorsP>Backend Engineer</CreatorsP>
+                    <CreatorsP>Backend Developer</CreatorsP>
                 </CreatorsCard>
                 <CreatorsCard>
-                    <CreatorsIcon src={Icon2} />
-                    <CreatorsH2>Aastha</CreatorsH2>
-                    <CreatorsP>Android Engineer</CreatorsP>
-                </CreatorsCard>
-                <CreatorsCard>
-                    <CreatorsIcon src={Icon3} />
-                    <CreatorsH2>Haiying</CreatorsH2>
-                    <CreatorsP>iOS Engineer</CreatorsP>
-                </CreatorsCard>
-                <CreatorsCard>
-                    <CreatorsIcon src={Icon4} />
-                    <CreatorsH2>Lucy</CreatorsH2>
-                    <CreatorsP>iOS Engineer</CreatorsP>
-                </CreatorsCard>
-                <CreatorsCard>
-                    <CreatorsIcon src={Icon5} />
-                    <CreatorsH2>Olivia</CreatorsH2>
-                    <CreatorsP>Backend Engineer</CreatorsP>
-                </CreatorsCard>
-                <CreatorsCard>
-                    <CreatorsIcon src={Icon6} />
+                    <CreatorsIcon src={IconVivi} />
                     <CreatorsH2>Vivi</CreatorsH2>
-                    <CreatorsP>Backend Engineer</CreatorsP>
+                    <CreatorsP>Backend Developer</CreatorsP>
                 </CreatorsCard>
                 <CreatorsCard>
-                    <CreatorsIcon src={Icon7} />
+                    <CreatorsIcon src={IconOlivia} />
+                    <CreatorsH2>Olivia</CreatorsH2>
+                    <CreatorsP>Backend Developer</CreatorsP>
+                </CreatorsCard>
+                <CreatorsCard>
+                    <CreatorsIcon src={IconHaiying} />
+                    <CreatorsH2>Haiying</CreatorsH2>
+                    <CreatorsP>iOS Developer</CreatorsP>
+                </CreatorsCard>
+                <CreatorsCard>
+                    <CreatorsIcon src={IconLucy} />
+                    <CreatorsH2>Lucy</CreatorsH2>
+                    <CreatorsP>iOS Developer</CreatorsP>
+                </CreatorsCard>
+                <CreatorsCard>
+                    <CreatorsIcon src={IconAastha} />
+                    <CreatorsH2>Aastha</CreatorsH2>
+                    <CreatorsP>Android Developer</CreatorsP>
+                </CreatorsCard>
+
+                <CreatorsCard>
+                    <CreatorsIcon src={IconCindy} />
                     <CreatorsH2>Cindy</CreatorsH2>
                     <CreatorsP>Designer</CreatorsP>
                 </CreatorsCard>

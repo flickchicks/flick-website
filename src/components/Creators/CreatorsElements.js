@@ -23,26 +23,26 @@ export const CreatorsContainer = styled.div`
 `;
 
 export const CreatorsWrapper = styled.div`
-    max-width: 1000px;
+    /* max-width: 1000px; */
     margin: 0 auto;
     display: grid;
     /* three columns */
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
     align-items: center;
-    grid-gap: 16px;
+    /* grid-gap: 16px; */
     padding: 0 50px;
 
     /* as the screen gets smaller, knock off the number of columns */
-    @media screen and (max-width: 1000px) {
-        grid-template-columns: 1fr 1fr 1fr;
-    }
+    /* @media screen and (max-width: 1200px) {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    } */
 
     /* @media screen and (max-width: 1000px) {
         grid-template-columns: 1fr 1fr;
     } */
 
     @media screen and (max-width: 768px) {
-        grid-template-columns: 1fr 1fr;
+        /* grid-template-columns: 1fr 1fr; */
         padding: 0 20px;
     }
 
@@ -58,9 +58,9 @@ export const CreatorsCard = styled.div`
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    border-radius: 10px;
+    /* border-radius: 10px; */
     max-height: 340px;
-    padding: 30px;
+    /* padding: 30px; */
     /* box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2); */
     /* transition: all 0.2s ease-in-out;
     &:hover {
@@ -71,13 +71,46 @@ export const CreatorsCard = styled.div`
 `;
 
 export const CreatorsIcon = styled.img`
-    height: 160px;
-    width: 160px;
-    margin-bottom: 10px;
+    display: none;
+    /* margin-bottom: 10px; */
     &:hover {
         transform: scale(1.02);
         transition: all 0.2s ease-in-out;
         cursor: pointer;
+    }
+
+    @media screen and (max-width: 660px) {
+        height: 160px;
+        width: 160px;
+        display: block;
+    }
+`;
+
+export const CreatorsIconGroupLarge = styled.img`
+    width: 80%;
+    @media screen and (max-width: 1200px) {
+        display: none;
+    }
+`;
+
+export const CreatorsIconGroupMedium = styled.img`
+    /* width: 80%; */
+    height: 20%;
+    display: none;
+    margin-bottom: 50px;
+    @media screen and (max-width: 1200px) {
+        display: block;
+    }
+    @media screen and (max-width: 1000px) {
+        height: 15%;
+        display: block;
+    }
+    @media screen and (max-width: 770px) {
+        height: 10%;
+        display: block;
+    }
+    @media screen and (max-width: 660px) {
+        display: none;
     }
 `;
 
@@ -106,6 +139,11 @@ export const CreatorsH2 = styled.h2`
     font-size: 20px;
     color: ${COLORS.darkBlue};
     margin-bottom: 10px;
+    display: none;
+
+    @media screen and (max-width: 660px) {
+        display: block;
+    }
 `;
 
 export const CreatorsP = styled.p`
@@ -113,6 +151,12 @@ export const CreatorsP = styled.p`
     color: ${COLORS.mediumGray};
     text-align: center;
     font-weight: 500;
+    margin-bottom: 40px;
+    display: none;
+
+    @media screen and (max-width: 660px) {
+        display: block;
+    }
 `;
 
 export const TextWrapper = styled.div`

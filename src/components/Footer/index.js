@@ -37,7 +37,7 @@ const Footer = () => {
                     <FooterLinksWrapper>
                         <FooterLinkItems>
                             {/* <FooterLinkTitle>About Us</FooterLinkTitle> */}
-                            <FooterLink to="/signin">Terms of Use</FooterLink>
+                            {/* <FooterLink to="/signin">Terms of Use</FooterLink> */}
                         </FooterLinkItems>
                         <FooterLinkItems>
                             {/* <FooterLinkTitle>About Us</FooterLinkTitle> */}
@@ -47,7 +47,7 @@ const Footer = () => {
                         </FooterLinkItems>
                         <FooterLinkItems>
                             {/* <FooterLinkTitle>About Us</FooterLinkTitle> */}
-                            <FooterLink to="/signin">Contact Us</FooterLink>
+                            {/* <FooterLink to="/signin">Contact Us</FooterLink> */}
                         </FooterLinkItems>
                     </FooterLinksWrapper>
                 </FooterLinksContainer>
