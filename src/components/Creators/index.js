@@ -14,7 +14,6 @@ import {
     CreatorsContainer,
     CreatorsH1,
     CreatorsSubtitle,
-    CreatorsWrapper,
     CreatorCard,
     CreatorIcon,
     CreatorName,
@@ -22,7 +21,58 @@ import {
     TextWrapper,
     CreatorIconGroupLarge,
     CreatorIconGroupMedium,
+    CreatorLabelGroupLarge,
+    CreatorLabelGroupMedOne,
+    CreatorLabelGroupMedTwo,
+    CreatorIconWrapper,
+    CreatorsIndividualWrapper,
+    CreatorLink
 } from "./CreatorsElements";
+
+const data = [
+    {
+        name: "Alanna",
+        role: "Backend Developer",
+        link: "https://www.linkedin.com/in/alanna-zhou/",
+        image: IconAlanna
+    },
+    {
+        name: "Aastha",
+        role: "Android Developer",
+        link: "https://www.linkedin.com/in/aastha-shah-9b2142149/",
+        image: IconAastha
+    },
+    {
+        name: "Haiying",
+        role: "iOS Developer",
+        link: "https://www.linkedin.com/in/haiying-weng-790687155/",
+        image: IconHaiying
+    },
+    {
+        name: "Lucy",
+        role: "iOS Developer",
+        link: "https://www.linkedin.com/in/lucylixu/",
+        image: IconLucy
+    },
+    {
+        name: "Olivia",
+        role: "Backend Developer",
+        link: "#",
+        image: IconOlivia
+    },
+    {
+        name: "Vivi",
+        role: "Backend Developer",
+        link: "https://www.linkedin.com/in/yuwei-vivi-ye/",
+        image: IconVivi
+    },
+    {
+        name: "Cindy",
+        role: "Designer",
+        link: "https://www.linkedin.com/in/cindyhuang-/",
+        image: IconCindy
+    },
+]
 
 const Creators = () => {
     return (
@@ -35,47 +85,76 @@ const Creators = () => {
                     instead of work.
                 </TextWrapper>
             </CreatorsSubtitle>
-            <CreatorIconGroupLarge src={IconGroupLarge} />
-            <CreatorIconGroupMedium src={IconGroupMediumOne} />
-            <CreatorIconGroupMedium src={IconGroupMediumTwo} />
 
-            <CreatorsWrapper>
-                <CreatorCard>
-                    <CreatorIcon src={IconAlanna} />
-                    <CreatorName>Alanna</CreatorName>
-                    <CreatorRole>Backend Developer</CreatorRole>
-                </CreatorCard>
-                <CreatorCard>
-                    <CreatorIcon src={IconVivi} />
-                    <CreatorName>Vivi</CreatorName>
-                    <CreatorRole>Backend Developer</CreatorRole>
-                </CreatorCard>
-                <CreatorCard>
-                    <CreatorIcon src={IconOlivia} />
-                    <CreatorName>Olivia</CreatorName>
-                    <CreatorRole>Backend Developer</CreatorRole>
-                </CreatorCard>
-                <CreatorCard>
-                    <CreatorIcon src={IconHaiying} />
-                    <CreatorName>Haiying</CreatorName>
-                    <CreatorRole>iOS Developer</CreatorRole>
-                </CreatorCard>
-                <CreatorCard>
-                    <CreatorIcon src={IconLucy} />
-                    <CreatorName>Lucy</CreatorName>
-                    <CreatorRole>iOS Developer</CreatorRole>
-                </CreatorCard>
-                <CreatorCard>
-                    <CreatorIcon src={IconAastha} />
-                    <CreatorName>Aastha</CreatorName>
-                    <CreatorRole>Android Developer</CreatorRole>
-                </CreatorCard>
-                <CreatorCard>
-                    <CreatorIcon src={IconCindy} />
-                    <CreatorName>Cindy</CreatorName>
-                    <CreatorRole>Designer</CreatorRole>
-                </CreatorCard>
-            </CreatorsWrapper>
+            {/* Full width: One row */}
+            <CreatorIconWrapper>
+                <CreatorIconGroupLarge src={IconGroupLarge} />
+                <CreatorLabelGroupLarge>
+                    {
+                        data.map(person => {
+                            return (
+                                <CreatorCard>
+                                    <CreatorLink href={person.link} target="_blank"><CreatorName>{person.name}</CreatorName></CreatorLink>
+                                    <CreatorRole>{person.role}</CreatorRole>
+                                </CreatorCard>
+                            )
+
+                        })
+                    }
+                </CreatorLabelGroupLarge>
+            </CreatorIconWrapper>
+
+            {/* Medium width: Two rows */}
+            <CreatorIconWrapper>
+                <CreatorIconGroupMedium src={IconGroupMediumOne} />
+                <CreatorLabelGroupMedOne>
+                    {
+                        data.slice(0, 4).map(person => {
+                            return (
+                                <CreatorCard>
+                                    <CreatorLink href={person.link} target="_blank"><CreatorName>{person.name}</CreatorName></CreatorLink>
+                                    <CreatorRole>{person.role}</CreatorRole>
+                                </CreatorCard>
+                            )
+
+                        })
+                    }
+                </CreatorLabelGroupMedOne>
+            </CreatorIconWrapper>
+
+            <CreatorIconWrapper>
+                <CreatorIconGroupMedium src={IconGroupMediumTwo} />
+                <CreatorLabelGroupMedTwo >
+                    {
+                        data.slice(4, 7).map(person => {
+                            return (
+                                <CreatorCard>
+                                    <CreatorLink href={person.link} target="_blank"><CreatorName>{person.name}</CreatorName></CreatorLink>
+                                    <CreatorRole>{person.role}</CreatorRole>
+                                </CreatorCard>
+                            )
+
+                        })
+                    }
+                </CreatorLabelGroupMedTwo>
+            </CreatorIconWrapper>
+
+            {/* Small width: Individual rows */}
+            <CreatorsIndividualWrapper>
+                {
+                    data.map(person => {
+                        return (
+                            <CreatorCard>
+                                <CreatorIcon src={person.image} />
+                                <CreatorLink href={person.link} target="_blank"><CreatorName>{person.name}</CreatorName></CreatorLink>
+                                <CreatorRole>{person.role}</CreatorRole>
+                            </CreatorCard>
+                        )
+
+                    })
+                }
+            </CreatorsIndividualWrapper>
+
         </CreatorsContainer>
     );
 };
