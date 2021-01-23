@@ -56,7 +56,7 @@ export const InfoRow = styled.div`
 
     @media screen and (max-width: 768px) {
         grid-template-areas: ${({ imgStart }) =>
-            imgStart ? `'col1' 'col2'` : `'col1 col1' 'col2 col2'`};
+        imgStart ? `'col1' 'col2'` : `'col1 col1' 'col2 col2'`};
     }
 `;
 
@@ -91,6 +91,10 @@ export const Heading = styled.h1`
         padding: 0 0 30px;
     }
 `;
+
+export const StrikeThrough = styled.span`
+    text-decoration: line-through;
+;`
 
 export const Subtitle = styled.p`
     max-width: 440px;

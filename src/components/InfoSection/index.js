@@ -10,6 +10,7 @@ import {
     Column2,
     TextWrapper,
     Heading,
+    StrikeThrough,
     Subtitle,
     BtnWrap,
     ImgWrap,
@@ -19,7 +20,9 @@ import {
 
 const InfoSection = ({
     imgStart,
-    headline,
+    headlineStart,
+    headlineEnd,
+    strikethrough,
     description,
     buttonLabelOne,
     buttonLabelTwo,
@@ -33,7 +36,7 @@ const InfoSection = ({
                     <InfoRow imgStart={imgStart}>
                         <Column1>
                             <TextWrapper>
-                                <Heading>{headline}</Heading>
+                                <Heading>{headlineStart}<StrikeThrough>{strikethrough}</StrikeThrough>{headlineEnd}</Heading>
                                 <ImgWrap>
                                     <SwirlyImg src={IconSwirly} />
                                 </ImgWrap>
