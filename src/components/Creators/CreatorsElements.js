@@ -100,7 +100,7 @@ export const CreatorIconGroupLarge = styled.img`
 
 export const CreatorIconGroupMedium = styled.img`
     /* width: 80%; */
-    height: 25%;
+    height: 250px;
     display: none;
     margin-bottom: 50px;
     @media screen and (max-width: 1200px) {
@@ -111,7 +111,7 @@ export const CreatorIconGroupMedium = styled.img`
         display: block;
     }
     @media screen and (max-width: 770px) {
-        height: 20%;
+        height: 200px;
         display: block;
     }
     @media screen and (max-width: 660px) {

@@ -99,16 +99,14 @@ export const NavLinks = styled(LinkS)`
     cursor: pointer;
 
     /* whichever navbar tab you hit on, gets highlighted with border  */
-    &.active {
+    /* &.active {
         border-bottom: 3px solid ${COLORS.darkPurple};
-    }
+    } */
     &:hover {
-        transform: scale(1.02);
-        transition: all 0.2s ease-in-out;
+        transform: scale(1.1);
+        /* transition: all 0.2s ease-in-out; */
         color: ${COLORS.darkPurple}
-        cursor: pointer;
-        filter: drop-shadow(10px 10px 20px rgba(138, 43, 226, 1));
-        
+        cursor: pointer;        
     }
     
 `;

@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { COLORS } from "../../Colors";
 
-export const DiscoverContainer = styled.div`
+export const AboutContainer = styled.div`
     height: 750px;
     display: flex;
     flex-direction: column;
@@ -22,7 +22,7 @@ export const DiscoverContainer = styled.div`
     }
 `;
 
-export const DiscoverWrapper = styled.div`
+export const AboutWrapper = styled.div`
     margin: 0 auto;
     display: grid;
     background-color: ${COLORS.backgroundPurple};
@@ -48,7 +48,7 @@ export const DiscoverWrapper = styled.div`
     }
 `;
 
-export const DiscoverCard = styled.div`
+export const AboutCard = styled.div`
     background: ${COLORS.backgroundPurple};
     display: flex;
     flex-direction: column;
@@ -66,7 +66,7 @@ export const DiscoverCard = styled.div`
     } */
 `;
 
-export const DiscoverIcon = styled.img`
+export const AboutIcon = styled.img`
     height: 400px;
     width: 400px;
     align-items: center;
@@ -84,7 +84,7 @@ export const DiscoverIcon = styled.img`
     }
 `;
 
-export const DiscoverText = styled.h2`
+export const AboutText = styled.h2`
     font-size: 1.5rem;
     color: ${COLORS.darkBlue};
     margin-bottom: 10px;
