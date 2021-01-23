@@ -10,7 +10,7 @@ export const AboutContainer = styled.div`
     background: ${COLORS.backgroundPurple};
 
     @media screen and (max-width: 1050px) {
-        height: 1250px;
+        height: 1350px;
     }
 
     @media screen and (max-width: 768) {

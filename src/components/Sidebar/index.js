@@ -23,7 +23,7 @@ const Sidebar = ({ isOpen, toggle }) => {
                         About
                     </SidebarLink> */}
                     <SidebarLink to="about" onClick={toggle}>
-                        Discover
+                        About
                     </SidebarLink>
                     <SidebarLink to="creators" onClick={toggle}>
                         Creators
