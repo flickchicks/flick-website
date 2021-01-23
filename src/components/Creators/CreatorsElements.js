@@ -2,23 +2,28 @@ import styled from "styled-components";
 import { COLORS } from "../../Colors";
 
 export const CreatorsContainer = styled.div`
-    height: 1200px;
+    height: 700px;
+    /* margin-bottom: 200px; */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background: ${COLORS.backgroundPurple};
 
-    @media screen and (max-width: 1000px) {
-        height: 1500px;
+    @media screen and (max-width: 1200px) {
+        height: 1000px;
     }
 
     @media screen and (max-width: 768px) {
-        height: 2300px;
+        height: 900px;
+    }
+
+    @media screen and (max-width: 660px) {
+        height: 2000px;
     }
 
     @media screen and (max-width: 440px) {
-        height: 2500px;
+        height: 2200px;
     }
 `;
 
@@ -95,18 +100,18 @@ export const CreatorIconGroupLarge = styled.img`
 
 export const CreatorIconGroupMedium = styled.img`
     /* width: 80%; */
-    height: 20%;
+    height: 25%;
     display: none;
     margin-bottom: 50px;
     @media screen and (max-width: 1200px) {
         display: block;
     }
     @media screen and (max-width: 1000px) {
-        height: 15%;
+        /* height: 15%; */
         display: block;
     }
     @media screen and (max-width: 770px) {
-        height: 10%;
+        height: 20%;
         display: block;
     }
     @media screen and (max-width: 660px) {

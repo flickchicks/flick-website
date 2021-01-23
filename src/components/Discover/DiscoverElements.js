@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { COLORS } from "../../Colors";
 
 export const DiscoverContainer = styled.div`
-    height: 800px;
+    height: 750px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -10,15 +10,15 @@ export const DiscoverContainer = styled.div`
     background: ${COLORS.backgroundPurple};
 
     @media screen and (max-width: 1050px) {
-        height: 1550px;
+        height: 1250px;
     }
 
     @media screen and (max-width: 768) {
-        height: 1600px;
+        height: 1200px;
     }
 
     @media screen and (max-width: 440px) {
-        height: 1200px;
+        height: 1000px;
     }
 `;
 
@@ -73,14 +73,14 @@ export const DiscoverIcon = styled.img`
     justify-content: center;
     margin: auto;
     margin-bottom: 5px;
-    &:hover {
+    /* &:hover {
         transform: scale(1.02);
         transition: all 0.2s ease-in-out;
         cursor: pointer;
-    }
+    } */
     @media screen and (max-width: 440px) {
-        height: 370px;
-        width: 370px;
+        max-height: 330px;
+        width: 330px;
     }
 `;
 

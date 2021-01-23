@@ -2,19 +2,23 @@ import styled from "styled-components";
 import { COLORS } from "../../Colors";
 
 export const InfoContainer = styled.div`
-    max-height: 1100px;
+    max-height: 900px;
     background: ${COLORS.backgroundPurple};
     width: 100%;
     @media screen and (max-width: 1000px) {
-        max-height: 1300px;
-        padding: 100px 0;
+        max-height: 800px;
+        /* padding: 100px 0; */
     }
     @media screen and (max-width: 768px) {
         max-height: 1500px;
         padding: 100px 0;
     }
+    @media screen and (max-width: 530px) {
+        max-height: 1300px;
+        padding: 0 0;
+    }
     @media screen and (max-width: 440px) {
-        max-height: 1200px;
+        max-height: 1100px;
         padding: 0 0;
     }
 `;
@@ -27,7 +31,7 @@ export const InfoWrapper = styled.div`
     max-width: 1100px;
     margin-right: auto;
     margin-left: auto;
-    padding: 200px 24px;
+    padding: 100px 24px;
     justify-content: center;
 
     @media screen and (max-width: 1000px) {
@@ -69,10 +73,10 @@ export const Column2 = styled.div`
 export const TextWrapper = styled.div`
     max-width: 540px;
     padding-top: 0;
-    padding-bottom: 60px;
-    @media screen and (max-width: 650px) {
+    /* padding-bottom: 60px; */
+    /* @media screen and (max-width: 650px) {
         padding: 0 20px;
-    }
+    } */
 `;
 
 export const Heading = styled.h1`
@@ -118,11 +122,6 @@ export const Img = styled.img`
     width: 100%;
     margin: 0 0 0 0;
     padding-right: 0;
-    &:hover {
-        transform: scale(1.02);
-        transition: all 0.2s ease-in-out;
-        cursor: pointer;
-    }
     @media screen and (max-width: 768px) {
         margin-left: 50px;
         margin-top: 60px;
@@ -139,11 +138,6 @@ export const SwirlyImg = styled.img`
     width: 100%;
     margin: 0 0 30px 0;
     padding-right: 0;
-    &:hover {
-        transform: scale(1.05);
-        transition: all 0.2s ease-in-out;
-        cursor: pointer;
-    }
 
     @media screen and (max-width: 480px) {
         padding: 0 0 50px;

@@ -38,18 +38,17 @@ const Footer = () => {
                             {/* <FooterLinkTitle>About Us</FooterLinkTitle> */}
                             {/* <FooterLink to="/signin">Terms of Use</FooterLink> */}
                         </FooterLinkItems>
-                        <FooterLinkItems>
-                            {/* <FooterLinkTitle>About Us</FooterLinkTitle> */}
-                            <FooterLink to="/privacy">
-                                Privacy Policy
-                            </FooterLink>
-                        </FooterLinkItems>
+
                         <FooterLinkItems>
                             {/* <FooterLinkTitle>About Us</FooterLinkTitle> */}
                             {/* <FooterLink to="/signin">Contact Us</FooterLink> */}
                         </FooterLinkItems>
                     </FooterLinksWrapper>
                 </FooterLinksContainer>
+                <FooterLinkItems>
+                    {/* <FooterLinkTitle>About Us</FooterLinkTitle> */}
+                    <FooterLink to="/privacy">Privacy Policy</FooterLink>
+                </FooterLinkItems>
                 <SocialMedia>
                     <SocialMediaWrap>
                         <SocialLogo to="/" onClick={toggleHome}>
@@ -59,7 +58,7 @@ const Footer = () => {
                             flick © {new Date().getFullYear()} All rights
                             reserved.
                         </WebsiteRights>
-                        <SocialIcons>
+                        {/* <SocialIcons>
                             <SocialIconLink
                                 href="/"
                                 target="_blank"
@@ -95,7 +94,7 @@ const Footer = () => {
                             >
                                 <FaLinkedin />
                             </SocialIconLink>
-                        </SocialIcons>
+                        </SocialIcons> */}
                     </SocialMediaWrap>
                 </SocialMedia>
             </FooterWrap>
