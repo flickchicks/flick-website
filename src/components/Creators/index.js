@@ -1,14 +1,14 @@
 import React from "react";
-import IconAlanna from "../../images/alanna.svg";
-import IconAastha from "../../images/aastha.svg";
-import IconHaiying from "../../images/haiying.svg";
-import IconLucy from "../../images/lucy.svg";
-import IconOlivia from "../../images/olivia.svg";
-import IconVivi from "../../images/vivi.svg";
-import IconCindy from "../../images/cindy.svg";
-import IconGroupLarge from "../../images/groupLarge.svg";
-import IconGroupMediumOne from "../../images/groupMediumOne.svg";
-import IconGroupMediumTwo from "../../images/groupMediumTwo.svg";
+import IconAlanna from "../../images/alanna.png";
+import IconAastha from "../../images/aastha.png";
+import IconHaiying from "../../images/haiying.png";
+import IconLucy from "../../images/lucy.png";
+import IconOlivia from "../../images/olivia.png";
+import IconVivi from "../../images/vivi.png";
+import IconCindy from "../../images/cindy.png";
+import IconGroupLarge from "../../images/filmstrip.png";
+import IconGroupMediumOne from "../../images/row 1.png";
+import IconGroupMediumTwo from "../../images/row 2.png";
 
 import {
     CreatorsContainer,
