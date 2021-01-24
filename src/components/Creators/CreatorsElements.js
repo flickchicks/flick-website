@@ -2,29 +2,12 @@ import styled from "styled-components";
 import { COLORS } from "../../Colors";
 
 export const CreatorsContainer = styled.div`
-    height: 700px;
-    /* margin-bottom: 200px; */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background: ${COLORS.backgroundPurple};
-
-    @media screen and (max-width: 1200px) {
-        height: 1000px;
-    }
-
-    @media screen and (max-width: 768px) {
-        height: 900px;
-    }
-
-    @media screen and (max-width: 660px) {
-        height: 2000px;
-    }
-
-    @media screen and (max-width: 440px) {
-        height: 2200px;
-    }
+    padding-bottom: 10%;
 `;
 
 export const CreatorsWrapper = styled.div`
@@ -51,7 +34,7 @@ export const CreatorsWrapper = styled.div`
         padding: 0 20px;
     }
 
-    @media screen and (max-width: 500px) {
+    @media screen and (max-width: 775px) {
         grid-template-columns: 1fr;
         padding: 0 20px;
     }
@@ -63,11 +46,7 @@ export const CreatorCard = styled.div`
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    /* border-radius: 10px; */
     max-height: 340px;
-    /* padding: 30px; */
-    /* box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2); */
-    /* transition: all 0.2s ease-in-out;
     &:hover {
         transform: scale(1.02);
         transition: all 0.2s ease-in-out;
@@ -76,42 +55,51 @@ export const CreatorCard = styled.div`
 `;
 
 export const CreatorIcon = styled.img`
-    display: none;
-    /* margin-bottom: 10px; */
-    &:hover {
-        transform: scale(1.02);
-        transition: all 0.2s ease-in-out;
-        cursor: pointer;
-    }
+    height: 200px;    
 
-    @media screen and (max-width: 660px) {
-        height: 160px;
-        width: 160px;
-        display: block;
+    @media screen and (max-width: 375px) {
+        width: 80%;
+        height: auto;
     }
 `;
 
 export const CreatorIconGroupLarge = styled.img`
-    width: 80%;
+    width: 100%;
+    margin: 0 auto;
     @media screen and (max-width: 1200px) {
         display: none;
     }
 `;
 
+export const CreatorIconWrapper = styled.div`
+    @media screen and (min-width: 1200px) {
+        width: 80%;
+    }
+    @media screen and (max-width: 775px) {
+        display: none;
+    }
+;`
+
+export const CreatorsIndividualWrapper = styled.div`
+    @media screen and (min-width: 775px) {
+        display: none;
+    }
+
+    display: block;
+}`
+
 export const CreatorIconGroupMedium = styled.img`
-    /* width: 80%; */
-    height: 250px;
     display: none;
-    margin-bottom: 50px;
     @media screen and (max-width: 1200px) {
         display: block;
+        height: 200px;
     }
     @media screen and (max-width: 1000px) {
-        /* height: 15%; */
         display: block;
+        height: 150px;
     }
     @media screen and (max-width: 770px) {
-        height: 200px;
+        height: 120px;
         display: block;
     }
     @media screen and (max-width: 660px) {
@@ -135,21 +123,72 @@ export const CreatorsSubtitle = styled.h1`
     margin-bottom: 30px;
     font-weight: 500;
     text-align: center;
-    @media screen and (max-width: 500px) {
-        /* font-size: 14px; */
-    }
 `;
 
 export const CreatorName = styled.h2`
     font-size: 20px;
     color: ${COLORS.darkBlue};
     margin-bottom: 10px;
-    display: none;
-
-    @media screen and (max-width: 660px) {
-        display: block;
+    margin-top: 20px;
+    width: 90%;
+    text-align: center;
+    transition: 0.2s ease-in-out;
+    &:hover {
+        text-decoration: underline;
+        color: ${COLORS.darkPurple};
     }
 `;
+
+export const CreatorLink = styled.a`
+    text-decoration: none;
+    color: initial;
+    
+;`
+
+export const CreatorLabelGroupLarge = styled.div`
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    margin: 0 auto;
+    grid-gap: 0;
+    width: 100%;
+    padding: 0 2%;
+    @media screen and (max-width: 1200px){
+        display: none;
+    }
+`;
+
+export const CreatorLabelGroupMedOne = styled.div`
+    display: none;
+    width: 100%;
+    padding: 0 2%;
+    @media screen and (max-width: 1200px){
+        display: none;display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        margin: 0 auto;
+        grid-gap: 0;
+    }
+
+    @media screen and (max-width: 775px){
+        display: none;
+    }
+`;
+
+export const CreatorLabelGroupMedTwo = styled.div`
+    display: none;
+    width: 100%;
+    padding: 0 2%;
+    @media screen and (max-width: 1200px){
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin: 0 auto;
+        grid-gap: 0;
+    }
+
+    @media screen and (max-width: 775px){
+        display: none;
+    }
+`;
+
 
 export const CreatorRole = styled.p`
     font-size: 16px;
@@ -157,11 +196,7 @@ export const CreatorRole = styled.p`
     text-align: center;
     font-weight: 500;
     margin-bottom: 40px;
-    display: none;
-
-    @media screen and (max-width: 660px) {
-        display: block;
-    }
+    width: 90%;
 `;
 
 export const TextWrapper = styled.div`
