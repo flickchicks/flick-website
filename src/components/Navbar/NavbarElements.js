@@ -55,6 +55,9 @@ export const NavLogo = styled(LinkR)`
         transition: all 0.2s ease-in-out;
         cursor: pointer;
     }
+    @media screen and (max-width: 440px) {
+        margin-left: 0;
+    }
 `;
 
 export const MobileIcon = styled.div`
@@ -141,7 +144,8 @@ export const NavBtnLink = styled(LinkR)`
 `;
 
 export const NavImg = styled.img`
+    height: 50%;
     @media screen and (max-width: 440px) {
-        max-width: 50px;
+        height: 30%;
     }
 `;
