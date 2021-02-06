@@ -15,8 +15,6 @@ import {
     NavBtnLink,
     NavImg,
 } from "./NavbarElements";
-import Icon1 from "../../images/logo.svg";
-import Icon2 from "../../images/flick.svg";
 import Logomark from "../../images/logomark.svg"
 
 const Navbar = ({ toggle }) => {
