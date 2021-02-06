@@ -23,7 +23,7 @@ import {
     SocialIconLink,
     FooterImg,
 } from "./FooterElements";
-import Icon from "../../images/flick.svg";
+import Icon from "../../images/telie.svg";
 
 const Footer = () => {
     const toggleHome = () => {
@@ -55,7 +55,7 @@ const Footer = () => {
                             <FooterImg src={Icon} />
                         </SocialLogo>
                         <WebsiteRights>
-                            flick © {new Date().getFullYear()} All rights
+                            Telie © {new Date().getFullYear()} All rights
                             reserved.
                         </WebsiteRights>
                         {/* <SocialIcons>
