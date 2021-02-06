@@ -34,9 +34,7 @@ const InfoSection = ({
                         <Column1>
                             <TextWrapper>
                                 <Heading>{headline}</Heading>
-                                <ImgWrap>
-                                    <SwirlyImg src={IconSwirly} />
-                                </ImgWrap>
+
                                 <Subtitle>{description}</Subtitle>
 
                                 <BtnWrap>

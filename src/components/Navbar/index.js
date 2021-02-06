@@ -15,8 +15,7 @@ import {
     NavBtnLink,
     NavImg,
 } from "./NavbarElements";
-import Icon1 from "../../images/logo.svg";
-import Icon2 from "../../images/flick.svg";
+import Logomark from "../../images/logomark.svg"
 
 const Navbar = ({ toggle }) => {
     const [scrollNav, setScrollNav] = useState(false);
@@ -44,8 +43,7 @@ const Navbar = ({ toggle }) => {
                     <NavbarContainer>
                         {/* normally you'd use "href", but react router uses "to" */}
                         <NavLogo to="/" onClick={toggleHome}>
-                            <NavImg src={Icon1} />
-                            <NavImg src={Icon2} />
+                            <NavImg src={Logomark} />
                         </NavLogo>
                         <MobileIcon onClick={toggle}>
                             <FaBars />

@@ -79,7 +79,7 @@ export const SocialMediaWrap = styled.div`
     justify-content: space-between;
     align-items: center;
     max-width: 1100px;
-    margin: 40px auto 0 auto;
+    margin: 0 auto;
 
     @media screen and (max-width: 820px) {
         flex-direction: column;
@@ -121,6 +121,7 @@ export const SocialIconLink = styled.a`
 `;
 
 export const FooterImg = styled.img`
+    height: 24px;
     &:hover {
         transform: scale(1.05);
         transition: all 0.2s ease-in-out;

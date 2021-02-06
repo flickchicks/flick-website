@@ -56,18 +56,24 @@ export const InfoRow = styled.div`
 
     @media screen and (max-width: 768px) {
         grid-template-areas: ${({ imgStart }) =>
-            imgStart ? `'col1' 'col2'` : `'col1 col1' 'col2 col2'`};
+        imgStart ? `'col1' 'col2'` : `'col1 col1' 'col2 col2'`};
     }
 `;
 
 export const Column1 = styled.div`
     padding: 0 15px;
     grid-area: col1;
+    @media screen and (max-width: 768px) {
+        padding: 0 10%;
+    }
 `;
 
 export const Column2 = styled.div`
-    padding: 0 15px;
+    padding: 40px 15px;
     grid-area: col2;
+    @media screen and (max-width: 768px) {
+        padding: 0 10%;
+    }
 `;
 
 export const TextWrapper = styled.div`
@@ -113,8 +119,8 @@ export const BtnWrap = styled.div`
 `;
 
 export const ImgWrap = styled.div`
-    max-width: 555px;
-    height: 100%;
+    max-width: 75%;
+    filter: drop-shadow(43px 42px 73px rgba(0, 0, 0, 0.1));
     padding: 0;
 `;
 
