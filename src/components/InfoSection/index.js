@@ -7,7 +7,7 @@ import EmailInput from "./EmailInput.js";
 const InfoContainer = styled.div`
     width: 75%;
     max-width: 1200px;
-    margin: 150px auto;
+    margin: 8% auto;
     display: flex;
     @media screen and (max-width: 1000px) {
         max-height: 800px;
@@ -16,10 +16,12 @@ const InfoContainer = styled.div`
 
     @media screen and (max-width: 768px) {
         display: block;
+        margin: 15% auto;
         width: 80%;
     }
     @media screen and (max-width: 530px) {
         display: block;
+        margin: 20% auto;
         width: 90%;
     }
 
