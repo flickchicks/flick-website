@@ -7,7 +7,7 @@ export const CreatorsContainer = styled.div`
     justify-content: center;
     align-items: center;
     background: ${COLORS.backgroundPurple};
-    padding-bottom: 10%;
+    padding: 10% 0;
 `;
 
 export const CreatorsWrapper = styled.div`
