@@ -11,7 +11,7 @@ const groupsHeader = "Decide on your group’s next binge together"
 const groupsDescription = "Add ideas and put them to a vote, anonymous and free of judgement"
 const discoverHeader = "Discover and save content"
 const discoverDescription = "Keep note of the movies and shows you’ve loved, hated, and everything in between with fully customizable lists"
-const suggestHeader = "Share between friends"
+const suggestHeader = "Send between friends"
 const suggestDescription = "Bond over content by sharing your thoughts or suggestions"
 
 class About extends React.Component {

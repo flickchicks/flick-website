@@ -18,7 +18,14 @@ h2 {
 h4 {
     font-weight: 400;
     font-size: 24px;
-    color: #3F3A58
+    color: #3F3A58;
+}
+
+h5 {
+    font-weight: 400;
+    font-size: 20px;
+    color: #3F3A58;
+    margin-bottom: 24px;
 }
 
 .featureHeader {

@@ -1,21 +1,57 @@
 import React from "react";
-import { Button } from "../ButtonElements";
-import IconSwirly from "../../images/swirly.svg";
+import styled from "styled-components";
+import { COLORS } from "../../Colors";
+import EmailInput from "./EmailInput.js";
 
-import {
-    InfoContainer,
-    InfoWrapper,
-    InfoRow,
-    Column1,
-    Column2,
-    TextWrapper,
-    Heading,
-    Subtitle,
-    BtnWrap,
-    ImgWrap,
-    Img,
-    SwirlyImg,
-} from "./InfoElements";
+
+const InfoContainer = styled.div`
+    width: 75%;
+    max-width: 1200px;
+    margin: 150px auto;
+    display: flex;
+    @media screen and (max-width: 1000px) {
+        max-height: 800px;
+        /* padding: 100px 0; */
+    }
+
+    @media screen and (max-width: 768px) {
+        display: block;
+        width: 80%;
+    }
+    @media screen and (max-width: 530px) {
+        display: block;
+        width: 90%;
+    }
+
+`;
+
+const Heading = styled.h1`
+    margin-bottom: 56px;
+    font-size: 48px;
+    line-height: 1.1;
+    font-weight: 700;
+    color: ${COLORS.darkBlue};
+
+    @media screen and (max-width: 480px) {
+        font-size: 32px;
+        padding: 0 0 30px;
+    }
+`;
+
+const InfoWrapper = styled.div`
+    display: block;
+    width: 50%;
+    padding: 40px 20px 20px 40px;
+
+    @media screen and (max-width: 1000px) {
+        width: 100%;
+    }
+    @media screen and (max-width: 500px) {
+        width: 100%;
+        padding: 40px 0;
+    }
+
+`
 
 const InfoSection = ({
     imgStart,
@@ -30,44 +66,11 @@ const InfoSection = ({
         <>
             <InfoContainer>
                 <InfoWrapper>
-                    <InfoRow imgStart={imgStart}>
-                        <Column1>
-                            <TextWrapper>
-                                <Heading>{headline}</Heading>
-
-                                <Subtitle>{description}</Subtitle>
-
-                                <BtnWrap>
-                                    <Button
-                                        to="home"
-                                        smooth={true}
-                                        duration={500}
-                                        spy={true}
-                                        exact="true"
-                                        offset={-80}
-                                    >
-                                        {buttonLabelOne}
-                                    </Button>
-                                    <Button
-                                        to="home"
-                                        smooth={true}
-                                        duration={500}
-                                        spy={true}
-                                        exact="true"
-                                        offset={-80}
-                                    >
-                                        {buttonLabelTwo}
-                                    </Button>
-                                </BtnWrap>
-                            </TextWrapper>
-                        </Column1>
-                        <Column2>
-                            <ImgWrap>
-                                <Img src={img} alt={alt} />
-                            </ImgWrap>
-                        </Column2>
-                    </InfoRow>
+                    <Heading>{headline}</Heading>
+                    <h5>Want to be a part of this? Put your name down and we'll send you a link to join.</h5>
+                    <EmailInput />
                 </InfoWrapper>
+
             </InfoContainer>
         </>
     );
