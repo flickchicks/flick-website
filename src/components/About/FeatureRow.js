@@ -7,10 +7,27 @@ const FeatureContainer = styled.div`
   width: 75%;
   max-width: 1200px;
   margin: 50px auto;
+
+  @media screen and (max-width: 770px) {
+    display: block;
+    width: 80%;
+  }
+  @media screen and (max-width: 500px) {
+    display: block;
+    width: 90%;
+  }
 `
 const FeatureImageWrapper = styled.div`
   width: 50%;
   padding: 20px;
+  @media screen and (max-width: 770px) {
+    width: 75%;
+    margin: auto;
+  }
+  @media screen and (max-width: 500px) {
+    display: block;
+    width: 100%;
+  }
 `
 const FeatureImage = styled.img`
   width: 90%
@@ -19,6 +36,14 @@ const FeatureDescriptionWrapper = styled.div`
   display: block;
   width: 50%;
   padding: 20px;
+  @media screen and (max-width: 770px) {
+    width: 75%;
+    margin: auto;
+  }
+  @media screen and (max-width: 500px) {
+    display: block;
+    width: 100%;
+  }
 `
 const FeatureDescription = styled.div`
   display:flex;
