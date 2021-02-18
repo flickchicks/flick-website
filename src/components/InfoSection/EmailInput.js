@@ -27,7 +27,8 @@ const Label = styled.label`
 `
 const Submit = styled.button`
   display: inline-block;
-  background-color: ${COLORS.lightPurple};
+  background-color: ${({ disabled }) =>
+    disabled ? COLORS.disabledPurpleLight : COLORS.lightPurple};
   padding: 12px;
   margin-bottom: 12px ;
   border-radius: 40px;
