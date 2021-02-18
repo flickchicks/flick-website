@@ -4,3 +4,30 @@
     padding: 0;
     font-family: "Inter", sans-serif;
 }
+
+body {
+    background-color: #F7F5FE
+}
+
+h2 {
+    color: #0B0629;
+    font-weight: 700;
+    font-size: 36px;
+}
+
+h4 {
+    font-weight: 400;
+    font-size: 24px;
+    color: #3F3A58;
+}
+
+h5 {
+    font-weight: 400;
+    font-size: 20px;
+    color: #3F3A58;
+    margin-bottom: 24px;
+}
+
+.featureHeader {
+    margin-bottom: 20px;
+}

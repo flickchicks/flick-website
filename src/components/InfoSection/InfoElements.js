@@ -2,9 +2,9 @@ import styled from "styled-components";
 import { COLORS } from "../../Colors";
 
 export const InfoContainer = styled.div`
-    max-height: 900px;
-    background: ${COLORS.backgroundPurple};
-    width: 100%;
+    width: 75%;
+    margin: auto;
+    display: flex;
     @media screen and (max-width: 1000px) {
         max-height: 800px;
         /* padding: 100px 0; */
@@ -89,7 +89,7 @@ export const Heading = styled.h1`
     margin-bottom: 25px;
     font-size: 48px;
     line-height: 1.1;
-    font-weight: 600;
+    font-weight: 700;
     color: ${COLORS.darkBlue};
 
     @media screen and (max-width: 480px) {
