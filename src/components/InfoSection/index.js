@@ -36,13 +36,13 @@ const Heading = styled.h1`
 
     @media screen and (max-width: 480px) {
         font-size: 32px;
-        padding: 0 0 30px;
+        margin-bottom: 40px
     }
 `;
 
 const InfoWrapper = styled.div`
     display: block;
-    width: 50%;
+    width: 60%;
     padding: 40px 20px 20px 40px;
 
     @media screen and (max-width: 1000px) {

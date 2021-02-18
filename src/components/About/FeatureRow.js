@@ -59,7 +59,6 @@ const FeatureIcon = styled.img`
 class FeatureRow extends React.Component {
 
   render() {
-    console.log(this.props.image);
     return (
       <FeatureContainer>
         <FeatureImageWrapper>
