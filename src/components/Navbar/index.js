@@ -11,8 +11,6 @@ import {
     NavMenu,
     NavItem,
     NavLinks,
-    NavBtn,
-    NavBtnLink,
     NavImg,
 } from "./NavbarElements";
 import Logomark from "../../images/logomark.svg"

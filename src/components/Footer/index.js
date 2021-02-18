@@ -1,26 +1,17 @@
 import React from "react";
 import { animateScroll as scroll } from "react-scroll";
-import {
-    FaFacebook,
-    FaInstagram,
-    FaYoutube,
-    FaTwitter,
-    FaLinkedin,
-} from "react-icons/fa";
+
 import {
     FooterContainer,
     FooterWrap,
     FooterLinksContainer,
     FooterLinksWrapper,
     FooterLinkItems,
-    FooterLinkTitle,
     FooterLink,
     SocialMedia,
     SocialMediaWrap,
     SocialLogo,
     WebsiteRights,
-    SocialIcons,
-    SocialIconLink,
     FooterImg,
 } from "./FooterElements";
 import Icon from "../../images/telie.svg";

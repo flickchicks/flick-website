@@ -1,40 +1,16 @@
 import React from "react";
-import { Button } from "../ButtonElements";
-import Icon1 from "../../images/swirly.svg";
 
 import {
     InfoContainer,
     InfoWrapper,
-    InfoRow,
-    Column1,
     TextWrapper,
-    TopLine,
     H1,
     Text,
-    BtnWrap,
-    Column2,
-    ImgWrap,
-    Img,
-    SwirlyImg,
     H2,
     H3,
 } from "./PrivacyElements";
 
 const PrivacySection = ({
-    id,
-    imgStart,
-    topLine,
-    lightText,
-    headline,
-    darkText,
-    description,
-    buttonLabelOne,
-    buttonLabelTwo,
-    img,
-    alt,
-    primary,
-    dark,
-    dark2,
 }) => {
     return (
         <>
