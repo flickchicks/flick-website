@@ -45,7 +45,7 @@ const InfoWrapper = styled.div`
     width: 60%;
     padding: 40px 20px 20px 40px;
 
-    @media screen and (max-width: 1000px) {
+    @media screen and (max-width: 1130px) {
         width: 100%;
     }
     @media screen and (max-width: 500px) {
@@ -69,7 +69,7 @@ const InfoSection = ({
             <InfoContainer>
                 <InfoWrapper>
                     <Heading>{headline}</Heading>
-                    <h5>Want to be a part of this? Put your name down and we'll send you a link to join.</h5>
+                    <h5>Want to be a part of this? Put your email down and we'll send you a link to join.</h5>
                     <EmailInput />
                 </InfoWrapper>
 

@@ -19,7 +19,7 @@ class About extends React.Component {
 
     render() {
         return (
-            <div>
+            <div id="about">
                 <FeatureRow image={GroupsImage} icon={GroupsIcon} header={groupsHeader} body={groupsDescription} />
                 <FeatureRow image={DiscoverImage} icon={DiscoverIcon} header={discoverHeader} body={discoverDescription} />
                 <FeatureRow image={SuggestImage} icon={SuggestIcon} header={suggestHeader} body={suggestDescription} />

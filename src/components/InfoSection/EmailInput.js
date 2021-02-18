@@ -1,19 +1,20 @@
 import React from "react";
 import { Form } from "react-bootstrap";
 import styled from "styled-components";
-
+import { COLORS } from "../../Colors"
 
 const Input = styled.input`
   display: inline-block;
   padding: 8px;
   border-radius: 8px;
-  border: 1px solid #BABACA;
+  border: 1px solid ${COLORS.mediumGray};
+  color: ${COLORS.darkBlue};
   margin-right: 5%;
+  margin-bottom: 12px;
   max-width: 400px;
   min-width: 220px;
   width: 60%;
-  font-size: 1.25em;
-  margin-bottom: 12px;
+  font-size: 1.2em;
   @media screen and (max-width: 600px) {
     display: block;
     width: 100%;
@@ -22,51 +23,65 @@ const Input = styled.input`
 const Label = styled.label`
   display: block;
   margin-bottom: 12px;
-  color: #3F3A58;
+  color: ${COLORS.darkBlueGray};
 `
 const Submit = styled.button`
   display: inline-block;
-  background-color: #E8E2FF;
+  background-color: ${COLORS.lightPurple};
   padding: 12px;
+  margin-bottom: 12px ;
   border-radius: 40px;
-  border: 1px solid #2B25A6;
-  color: #2B25A6;
+  border: 1px solid ${({ disabled }) =>
+    disabled ? COLORS.disabledPurple : COLORS.darkPurple} ;
+  color: ${({ disabled }) =>
+    disabled ? COLORS.disabledPurple : COLORS.darkPurple};
   font-weight: 900;
   font-size: 14px;
   width: 25%;
   text-align: center;
-  min-width: 120px;
+  min-width: 130px;
   box-sizing: content-box
+`
+const Warning = styled.p`
+  font-size: 12px;
+  color: #DA0F33;
+  display: block;
 `
 
 class EmailInput extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { Email: '' };
+    this.state = { submitted: false, error: false };
 
-    this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
   }
 
-  handleChange(event) {
-    this.setState({ Email: event.target.value });
-  }
   handleSubmit(event) {
     event.preventDefault();
     const scriptURL = "https://script.google.com/macros/s/AKfycbytII_T9vf2ck4xbwESfmvjzUNv8_KJ3j5E-139XEO4Kl_H5IWN2FMB/exec"
     fetch(scriptURL, { method: 'POST', body: new FormData(this.form) })
-      .then(response => console.log("success", response))
-      .catch(error => console.log('error', error.message))
+      .then(response => {
+        if (response.status === 200) {
+          this.setState({ submitted: true })
+          this.form.reset();
+        } else {
+          this.setState({ error: true })
+        }
+      })
+      .catch(error => this.setState({ error: true }))
   }
 
   render() {
+    const { submitted, error } = this.state
+    const requestedText = submitted ? "Requested" : "Request an invite"
+
     return (
       <form ref={form => this.form = form}>
         <div>
-          <Label htmlFor={"Email"}>Your Email</Label>
-          <Input id={"Email"} name={"Email"} type={"Email"} onChange={this.handleChange}></Input>
-
-          <Submit type="submit" onClick={this.handleSubmit}>Request an invite</Submit>
+          <Label htmlFor="Email">Your Email</Label>
+          <Input id="Email" name="Email" type="email"></Input>
+          <Submit type="submit" onClick={submitted ? null : this.handleSubmit} disabled={submitted}>{requestedText}</Submit>
+          <Warning>{error && "Something went wrong. Please try again."}</Warning>
         </div>
       </form>
     )
