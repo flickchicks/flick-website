@@ -43,7 +43,7 @@ const Heading = styled.h1`
 const InfoWrapper = styled.div`
     display: block;
     width: 60%;
-    padding: 40px 20px 20px 40px;
+    padding: 40px 20px 20px 20px;
 
     @media screen and (max-width: 1130px) {
         width: 100%;
