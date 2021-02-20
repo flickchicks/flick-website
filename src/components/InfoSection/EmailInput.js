@@ -21,8 +21,8 @@ const Input = styled.input`
   }
 
   &:focus {
-    outline: none;
-    box-shadow: 0px 0px 2px ${COLORS.darkBlueGray};
+    outline: none !important;
+    box-shadow: 0px 0px 2px ${COLORS.darkBlueGray} !important;
   }
 `
 const Label = styled.label`
@@ -58,7 +58,7 @@ const Submit = styled.button`
   }
 `
 const Warning = styled.p`
-font - size: 12px;
+font-size: 12px;
 color: #DA0F33;
 display: block;
 `

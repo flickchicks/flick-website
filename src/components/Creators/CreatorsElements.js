@@ -58,7 +58,7 @@ export const CreatorIcon = styled.img`
     height: 200px;    
 
     @media screen and (max-width: 375px) {
-        width: 80%;
+        width: 75%;
         height: auto;
     }
 `;
@@ -73,7 +73,7 @@ export const CreatorIconGroupLarge = styled.img`
 
 export const CreatorIconWrapper = styled.div`
     @media screen and (min-width: 1200px) {
-        width: 80%;
+        width: 70%;
     }
     @media screen and (max-width: 775px) {
         display: none;
@@ -107,7 +107,7 @@ export const CreatorIconGroupMedium = styled.img`
     }
 `;
 
-export const CreatorsH1 = styled.h1`
+export const CreatorsH1 = styled.h2`
     font-size: 2.5rem;
     color: black;
     margin-bottom: 30px;
@@ -117,15 +117,15 @@ export const CreatorsH1 = styled.h1`
     }
 `;
 
-export const CreatorsSubtitle = styled.h1`
-    font-size: 18px;
+export const CreatorsSubtitle = styled.h6`
+    font-size: 16px;
     color: ${COLORS.darkBlueGray};
     margin-bottom: 30px;
-    font-weight: 500;
+    font-weight: normal;
     text-align: center;
 `;
 
-export const CreatorName = styled.h2`
+export const CreatorName = styled.h6`
     font-size: 20px;
     color: ${COLORS.darkBlue};
     margin-bottom: 10px;
@@ -200,15 +200,15 @@ export const CreatorRole = styled.p`
 `;
 
 export const TextWrapper = styled.div`
-    max-width: 800px;
+    max-width: 75%;
     padding-top: 0;
     padding-bottom: 60px;
-
+    margin: auto;
     @media screen and (max-width: 768px) {
-        max-width: 440px;
+        max-width: 80%;
     }
 
     @media screen and (max-width: 440px) {
-        max-width: 300px;
+        max-width: 90%;
     }
 `;

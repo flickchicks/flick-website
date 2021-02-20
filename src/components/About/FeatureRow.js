@@ -54,6 +54,11 @@ const FeatureDescription = styled.div`
 const FeatureIcon = styled.img`
   max-width: 100px;
   margin-top: 40px;
+  @media screen and (max-width: 500px) {
+    display: block;
+    margin-top: 0;
+    width: 100%;
+  }
 `
 
 class FeatureRow extends React.Component {
@@ -69,7 +74,7 @@ class FeatureRow extends React.Component {
           <FeatureIcon src={this.props.icon} />
           <FeatureDescription>
             <h2 className={"featureHeader"}>{this.props.header}</h2>
-            <h4>{this.props.body}</h4>
+            <h3>{this.props.body}</h3>
           </FeatureDescription>
         </FeatureDescriptionWrapper>
       </FeatureContainer>

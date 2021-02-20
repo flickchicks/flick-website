@@ -1,10 +1,10 @@
 import React from "react";
 import DiscoverImage from "../../images/discover preview.png";
-import DiscoverIcon from "../../images/discover icon.png"
+import DiscoverIcon from "../../images/discover icon.svg"
 import GroupsImage from "../../images/groups preview.png";
-import GroupsIcon from "../../images/groups icon.png"
+import GroupsIcon from "../../images/groups icon.svg"
 import SuggestImage from "../../images/suggest preview.png";
-import SuggestIcon from "../../images/suggest icon.png"
+import SuggestIcon from "../../images/suggest icon.svg"
 import FeatureRow from "./FeatureRow.js";
 
 const groupsHeader = "Decide on your group’s next binge together"
