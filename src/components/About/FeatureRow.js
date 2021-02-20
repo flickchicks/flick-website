@@ -1,5 +1,7 @@
 import React from "react";
 import styled from "styled-components";
+import SmoothImage from 'react-smooth-image';
+
 
 
 const FeatureContainer = styled.div`
@@ -67,7 +69,17 @@ class FeatureRow extends React.Component {
     return (
       <FeatureContainer>
         <FeatureImageWrapper>
-          <FeatureImage src={this.props.image} />
+          <SmoothImage src={this.props.image} containerStyles={{
+            position: "static",
+            width: "auto",
+            height: "auto",
+            overflow: "auto",
+            paddingBottom: 0,
+            backgroundSize: "cover",
+            transitionProperty: "opacity",
+            transitionDuration: "1s",
+            transitionTimingTunction: "ease-in"
+          }} imageStyles={{ width: "100%", position: "static", filter: "drop-shadow(0px 8px 20px rgba(60, 57, 114, 0.2))" }} transitionTime={1.0} />
         </FeatureImageWrapper>
 
         <FeatureDescriptionWrapper>
@@ -83,3 +95,4 @@ class FeatureRow extends React.Component {
 }
 
 export default FeatureRow
+
