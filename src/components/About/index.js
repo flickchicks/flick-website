@@ -1,9 +1,9 @@
 import React from "react";
-import DiscoverImage from "../../images/discover preview.png";
+import DiscoverImage from "../../images/discover preview.svg";
 import DiscoverIcon from "../../images/discover icon.svg"
-import GroupsImage from "../../images/groups preview.png";
+import GroupsImage from "../../images/groups preview.svg";
 import GroupsIcon from "../../images/groups icon.svg"
-import SuggestImage from "../../images/suggest preview.png";
+import SuggestImage from "../../images/suggest preview.svg";
 import SuggestIcon from "../../images/suggest icon.svg"
 import FeatureRow from "./FeatureRow.js";
 
