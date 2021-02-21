@@ -67,7 +67,7 @@ class FeatureRow extends React.Component {
     return (
       <FeatureContainer>
         <FeatureImageWrapper>
-          <SmoothImage src={this.props.image} containerStyles={{
+          <SmoothImage src={this.props.image} alt={this.props.imgAlt} containerStyles={{
             position: "static",
             width: "auto",
             height: "auto",
@@ -81,7 +81,7 @@ class FeatureRow extends React.Component {
         </FeatureImageWrapper>
 
         <FeatureDescriptionWrapper>
-          <FeatureIcon src={this.props.icon} />
+          <FeatureIcon src={this.props.icon} alt={this.props.iconAlt} />
           <FeatureDescription>
             <h2 className={"featureHeader"}>{this.props.header}</h2>
             <h3>{this.props.body}</h3>

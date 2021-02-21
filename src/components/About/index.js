@@ -20,9 +20,9 @@ class About extends React.Component {
     render() {
         return (
             <div id="about">
-                <FeatureRow image={GroupsImage} icon={GroupsIcon} header={groupsHeader} body={groupsDescription} />
-                <FeatureRow image={DiscoverImage} icon={DiscoverIcon} header={discoverHeader} body={discoverDescription} />
-                <FeatureRow image={SuggestImage} icon={SuggestIcon} header={suggestHeader} body={suggestDescription} />
+                <FeatureRow image={GroupsImage} icon={GroupsIcon} header={groupsHeader} body={groupsDescription} imgAlt="Telie groups mockups" iconAlt="Couch icon" />
+                <FeatureRow image={DiscoverImage} icon={DiscoverIcon} header={discoverHeader} body={discoverDescription} imgAlt="Telie profile and list mockups" iconAlt="Search icon" />
+                <FeatureRow image={SuggestImage} icon={SuggestIcon} header={suggestHeader} body={suggestDescription} imgAlt="Telie suggestions mockups" iconAlt="Suggestions icon" />
 
             </div>
         );
