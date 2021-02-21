@@ -41,7 +41,7 @@ const Navbar = ({ toggle }) => {
                     <NavbarContainer>
                         {/* normally you'd use "href", but react router uses "to" */}
                         <NavLogo to="/" onClick={toggleHome}>
-                            <NavImg src={Logomark} />
+                            <NavImg src={Logomark} alt="Telie app logo" />
                         </NavLogo>
                         <MobileIcon onClick={toggle}>
                             <FaBars />

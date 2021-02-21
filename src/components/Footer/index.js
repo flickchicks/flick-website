@@ -43,7 +43,7 @@ const Footer = () => {
                 <SocialMedia>
                     <SocialMediaWrap>
                         <SocialLogo to="/" onClick={toggleHome}>
-                            <FooterImg src={Icon} />
+                            <FooterImg src={Icon} alt="Telie app wordmark" />
                         </SocialLogo>
                         <WebsiteRights>
                             Telie © {new Date().getFullYear()} All rights

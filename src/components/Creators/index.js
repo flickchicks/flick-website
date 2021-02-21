@@ -57,7 +57,7 @@ const data = [
     {
         name: "Olivia",
         role: "Backend Developer",
-        link: "#",
+        link: "https://www.linkedin.com/in/yue-li-7a1350193/",
         image: IconOlivia
     },
     {
@@ -81,8 +81,7 @@ const Creators = () => {
 
             <CreatorsSubtitle>
                 <TextWrapper>
-                    Seven friends at Cornell who like to talk about shows
-                    instead of work.
+                    Seven friends at Cornell who like to talk about shows instead of work. After being separated by quarantine, we wanted to help people connect and have fun through movies and shows, what we all love!
                 </TextWrapper>
             </CreatorsSubtitle>
 

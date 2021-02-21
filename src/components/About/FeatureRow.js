@@ -1,5 +1,7 @@
 import React from "react";
 import styled from "styled-components";
+import SmoothImage from 'react-smooth-image';
+
 
 
 const FeatureContainer = styled.div`
@@ -29,9 +31,7 @@ const FeatureImageWrapper = styled.div`
     width: 100%;
   }
 `
-const FeatureImage = styled.img`
-  width: 90%
-`
+
 const FeatureDescriptionWrapper = styled.div`
   display: block;
   width: 50%;
@@ -54,6 +54,11 @@ const FeatureDescription = styled.div`
 const FeatureIcon = styled.img`
   max-width: 100px;
   margin-top: 40px;
+  @media screen and (max-width: 500px) {
+    display: block;
+    margin-top: 0;
+    width: 100%;
+  }
 `
 
 class FeatureRow extends React.Component {
@@ -62,14 +67,24 @@ class FeatureRow extends React.Component {
     return (
       <FeatureContainer>
         <FeatureImageWrapper>
-          <FeatureImage src={this.props.image} />
+          <SmoothImage src={this.props.image} alt={this.props.imgAlt} containerStyles={{
+            position: "static",
+            width: "auto",
+            height: "auto",
+            overflow: "auto",
+            paddingBottom: 0,
+            backgroundSize: "cover",
+            transitionProperty: "opacity",
+            transitionDuration: "1s",
+            transitionTimingTunction: "ease-in"
+          }} imageStyles={{ width: "100%", position: "static", filter: "drop-shadow(0px 8px 20px rgba(60, 57, 114, 0.2))" }} transitionTime={1.0} />
         </FeatureImageWrapper>
 
         <FeatureDescriptionWrapper>
-          <FeatureIcon src={this.props.icon} />
+          <FeatureIcon src={this.props.icon} alt={this.props.iconAlt} />
           <FeatureDescription>
             <h2 className={"featureHeader"}>{this.props.header}</h2>
-            <h4>{this.props.body}</h4>
+            <h3>{this.props.body}</h3>
           </FeatureDescription>
         </FeatureDescriptionWrapper>
       </FeatureContainer>
@@ -78,3 +93,4 @@ class FeatureRow extends React.Component {
 }
 
 export default FeatureRow
+

@@ -1,5 +1,5 @@
 export const COLORS = {
-    backgroundPurple: "#f4f4fc",
+    backgroundPurple: "#F7F5FE",
     lightPurple: "#E8E2FF",
     darkPurple: "#5A1C97",
     darkBlue: "#0B0629",
