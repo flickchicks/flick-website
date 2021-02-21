@@ -31,9 +31,7 @@ const FeatureImageWrapper = styled.div`
     width: 100%;
   }
 `
-const FeatureImage = styled.img`
-  width: 90%
-`
+
 const FeatureDescriptionWrapper = styled.div`
   display: block;
   width: 50%;
