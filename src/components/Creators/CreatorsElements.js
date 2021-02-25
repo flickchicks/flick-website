@@ -6,7 +6,6 @@ export const CreatorsContainer = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: ${COLORS.backgroundPurple};
     padding: 10% 0;
 `;
 
@@ -41,7 +40,6 @@ export const CreatorsWrapper = styled.div`
 `;
 
 export const CreatorCard = styled.div`
-    background: ${COLORS.backgroundPurple};
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
