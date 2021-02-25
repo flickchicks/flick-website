@@ -49,8 +49,6 @@ export const NavLogo = styled(LinkR)`
     font-weight: bold;
     text-decoration: none;
     &:hover {
-        transform: scale(1.02);
-        transition: all 0.2s ease-in-out;
         cursor: pointer;
     }
     @media screen and (max-width: 530px) {
@@ -104,10 +102,10 @@ export const NavLinks = styled(LinkS)`
         border-bottom: 3px solid ${COLORS.darkPurple};
     } */
     &:hover {
-        transform: scale(1.1);
-        /* transition: all 0.2s ease-in-out; */
-        color: ${COLORS.darkPurple}
-        cursor: pointer;        
+        transition: all 0.2s ease-in-out;
+        color: ${COLORS.darkPurple};
+        cursor: pointer; 
+        font-weight: 700;       
     }
     
 `;
