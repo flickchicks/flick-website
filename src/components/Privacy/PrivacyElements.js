@@ -3,7 +3,6 @@ import { COLORS } from "../../Colors";
 
 export const InfoContainer = styled.div`
     /* max-height: 1100px; */
-    background: ${COLORS.backgroundPurple};
     width:     /* height: 100%; */ 100%;
     @media screen and (max-width: 1000px) {
         /* max-height: 1300px; */
@@ -52,7 +51,7 @@ export const InfoRow = styled.div`
 
     @media screen and (max-width: 768px) {
         grid-template-areas: ${({ imgStart }) =>
-            imgStart ? `'col1' 'col2'` : `'col1 col1' 'col2 col2'`};
+        imgStart ? `'col1' 'col2'` : `'col1 col1' 'col2 col2'`};
     }
 `;
 

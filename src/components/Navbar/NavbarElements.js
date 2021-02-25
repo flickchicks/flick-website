@@ -4,9 +4,7 @@ import { Link as LinkS } from "react-scroll";
 import { COLORS } from "../../Colors";
 
 export const Nav = styled.nav`
-    opacity: 0.9;
-    background: ${({ scrollNav }) =>
-        scrollNav ? COLORS.backgroundPurple : "transparent"};
+    background: rgba(247,245,254,.75);
     height: 80px;
     margin-top: -80px;
     display: flex;
@@ -15,6 +13,7 @@ export const Nav = styled.nav`
     position: sticky;
     top: 0;
     z-index: 10;
+    backdrop-filter: blur(10px);
 
     @media screen and (max-width: 960px) {
         transition: 0.5s all ease;
@@ -27,16 +26,15 @@ export const NavbarContainer = styled.div`
     justify-content: space-between;
     height: 80px;
     z-index: 1;
-    width: 100%;
-    padding: 0 24px;
-    max-width: 1300px;
+    width: 75%;
+    max-width: 1200px;
 
     @media screen and (max-width: 768px) {
-        width: 768px;
+        width: 80%
     }
 
-    @media screen and (max-width: 440px) {
-        width: 440px;
+    @media screen and (max-width: 500px) {
+        width: 90%
     }
 `;
 
@@ -47,7 +45,7 @@ export const NavLogo = styled(LinkR)`
     font-size: 1.5rem;
     display: flex;
     align-items: center;
-    margin-left: 24px;
+    margin-left: 20px;
     font-weight: bold;
     text-decoration: none;
     &:hover {
@@ -55,7 +53,7 @@ export const NavLogo = styled(LinkR)`
         transition: all 0.2s ease-in-out;
         cursor: pointer;
     }
-    @media screen and (max-width: 440px) {
+    @media screen and (max-width: 530px) {
         margin-left: 0;
     }
 `;
@@ -144,7 +142,7 @@ export const NavBtnLink = styled(LinkR)`
 `;
 
 export const NavImg = styled.img`
-    height: 50%;
+    height: 40%;
     @media screen and (max-width: 440px) {
         height: 30%;
     }
