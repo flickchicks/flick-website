@@ -55,6 +55,13 @@ const InfoWrapper = styled.div`
 
 `
 
+const Note = styled.p`
+    color: ${COLORS.mediumGray};
+    font-size: 12px;
+    font-weight: 400;
+    margin-bottom: 36px;
+`
+
 const InfoSection = ({
     imgStart,
     headline,
@@ -69,7 +76,8 @@ const InfoSection = ({
             <InfoContainer>
                 <InfoWrapper>
                     <Heading>{headline}</Heading>
-                    <h5>Want to be a part of this? Put your email down and we'll send you a link to join.</h5>
+                    <h5>Want to be a part of this? Put your email down and we'll send you a link to join from the App Store.</h5>
+                    <Note>Coming soon to Android!</Note>
                     <EmailInput />
                 </InfoWrapper>
 

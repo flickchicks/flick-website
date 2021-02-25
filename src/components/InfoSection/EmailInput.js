@@ -58,7 +58,7 @@ const Submit = styled.button`
   }
 `
 const Warning = styled.p`
-font - size: 12px;
+font-size: 12px;
 color: #DA0F33;
 display: block;
 `
