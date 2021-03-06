@@ -78,13 +78,13 @@ const Creators = () => {
     return (
         <CreatorsContainer id="creators">
             <CreatorsH1>Made by</CreatorsH1>
-
-            <CreatorsSubtitle>
-                <TextWrapper>
+            <TextWrapper>
+                <CreatorsSubtitle>
+               
                     Seven friends at Cornell who like to talk about shows instead of work. After being separated by quarantine, we wanted to help people connect and have fun through movies and shows, what we all love!
-                </TextWrapper>
-            </CreatorsSubtitle>
-
+                
+                </CreatorsSubtitle>
+            </TextWrapper>
             {/* Full width: One row */}
             <CreatorIconWrapper>
                 <CreatorIconGroupLarge src={IconGroupLarge} />
