@@ -32,6 +32,10 @@ h5 {
     margin-bottom: 20px;
 }
 
+p::selection, span::selection, h1::selection, h2::selection, h3::selection, h4::selection, h5::selection, h6::selection {
+    background: #E8E2FF;
+}
+
 /* mobile font sizes */
 @media screen and (max-width: 500px) {
     h2 {

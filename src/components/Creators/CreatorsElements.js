@@ -198,7 +198,7 @@ export const CreatorRole = styled.p`
 `;
 
 export const TextWrapper = styled.div`
-    max-width: 75%;
+    max-width: 60%;
     padding-top: 0;
     padding-bottom: 60px;
     margin: auto;
